@@ -6,7 +6,7 @@ by Ifeanyi Omeata
 <details>
   <summary>Offensive Security Intro </summary>
   
-  ##### 1. Using Gobuster
+  ##### 1. What is Gobuster?
   - [ ] [Gobuster](https://github.com/OJ/gobuster) is a tool used to brute-force: 
       - [ ] URIs (directories and files) in web sites.
       - [ ] DNS subdomains (with wildcard support).
@@ -16,11 +16,12 @@ by Ifeanyi Omeata
   - [ ] Gobuster will take a list of potential page or directory names and try accessing a website with each of them; if the page exists, it tells you.
 
   
-  ##### 2. Install Linux (Ubuntu) on Windows with WSL
-  - [ ] Open Windows Terminal as Administrator
+  ##### 2. Using Gobuster To Find Hidden Website Pages
+  - [ ] Type the following command into the terminal to find potentially hidden pages on website
   ```
-  wsl --install
+  gobuster -u http://fakebank.thm -w wordlist.txt dir
   ```
+  - [ ] Type the following
 
 
 </details>
