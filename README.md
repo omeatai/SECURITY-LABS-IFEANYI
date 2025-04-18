@@ -6,7 +6,7 @@ by Ifeanyi Omeata
 <details>
   <summary>Offensive Security Intro </summary>
   
-  ### 1. Using Gobuster
+  ##### 1. Using Gobuster
   - [ ] [Gobuster](https://github.com/OJ/gobuster) is a tool used to brute-force: 
       - [ ] URIs (directories and files) in web sites.
       - [ ] DNS subdomains (with wildcard support).
@@ -14,7 +14,7 @@ by Ifeanyi Omeata
       - [ ] Open Google Cloud buckets
       - [ ] TFTP servers
   
-  ### 2. Install Linux (Ubuntu) on Windows with WSL
+  ##### 2. Install Linux (Ubuntu) on Windows with WSL
   - [ ] Open Windows Terminal as Administrator
   ```
   wsl --install
