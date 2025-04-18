@@ -13,6 +13,8 @@ by Ifeanyi Omeata
       - [ ] Open Amazon S3 buckets
       - [ ] Open Google Cloud buckets
       - [ ] TFTP servers
+  - [ ] Gobuster will take a list of potential page or directory names and try accessing a website with each of them; if the page exists, it tells you.
+
   
   ##### 2. Install Linux (Ubuntu) on Windows with WSL
   - [ ] Open Windows Terminal as Administrator
