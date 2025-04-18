@@ -4,6 +4,9 @@ by Ifeanyi Omeata
 ### 1-Introduction to Cyber Security
 
 <details>
+  <summary>1-Introduction to Cyber Security </summary>
+
+<details>
   <summary>Offensive Security Intro </summary>
   
   ### 1. Popular Distributions
@@ -22,3 +25,4 @@ by Ifeanyi Omeata
 
 </details>
 
+</details>
