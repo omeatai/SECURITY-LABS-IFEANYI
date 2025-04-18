@@ -55,5 +55,12 @@ by Ifeanyi Omeata
   - [ ] Some adversaries might seek to steal customer data from a mobile operator; however, other adversaries are interested in halting the production in a petroleum refinery.
   - [ ] Example adversaries include a nation-state cyber army working for political reasons and a ransomware group acting for financial purposes.
 
+  ##### 4. Digital Forensics
+  - [ ] In this context, intelligence refers to information you gather about actual and potential enemies.
+  - [ ] A threat is any action that can disrupt or adversely affect a system.
+  - [ ] Threat intelligence collects information to help the company better prepare against potential adversaries.
+  - [ ] The purpose would be to achieve a threat-informed defence. Different companies have different adversaries.
+  - [ ] Some adversaries might seek to steal customer data from a mobile operator; however, other adversaries are interested in halting the production in a petroleum refinery.
+  - [ ] Example adversaries include a nation-state cyber army working for political reasons and a ransomware group acting for financial purposes.
 
 </details>
