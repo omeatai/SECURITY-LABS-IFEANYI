@@ -1,10 +1,7 @@
 # SECURITY-LABS-IFEANYI
 by Ifeanyi Omeata
 
-##### 1-Introduction to Cyber Security
-
-<details>
-  <summary>1-Introduction to Cyber Security </summary>
+##### Introduction to Cyber Security
 
 <details>
   <summary>Offensive Security Intro </summary>
@@ -25,4 +22,3 @@ by Ifeanyi Omeata
 
 </details>
 
-</details>
