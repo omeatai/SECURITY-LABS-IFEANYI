@@ -4,7 +4,7 @@ by Ifeanyi Omeata
 ##### Pre-Security
 
 <details>
-  <summary>Introduction to Cyber Security</summary>
+  <summary>1-Introduction to Cyber Security</summary>
 
 <details>
   <summary>Gobuster Offensive Attack</summary>
@@ -142,7 +142,7 @@ by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>Network Fundamentals</summary>
+  <summary>2-Network Fundamentals</summary>
  
   ##### Ransomware
 
@@ -151,7 +151,7 @@ by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>How The Web Works</summary>
+  <summary>3-How The Web Works</summary>
  
   ##### Ransomware
 
@@ -160,7 +160,7 @@ by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>Linux Fundamentals</summary>
+  <summary>4-Linux Fundamentals</summary>
  
   ##### Ransomware
 
@@ -169,7 +169,7 @@ by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>Windows Fundamentals</summary>
+  <summary>5-Windows Fundamentals</summary>
  
   ##### Ransomware
 
