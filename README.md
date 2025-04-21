@@ -4,7 +4,7 @@ by Ifeanyi Omeata
 ##### Introduction to Cyber Security
 
 <details>
-  <summary>Offensive Security Intro </summary>
+  <summary>Gobuster</summary>
   
   ##### 1. What is Gobuster?
   - [ ] [Gobuster](https://github.com/OJ/gobuster) is a tool used to brute-force: 
@@ -29,13 +29,7 @@ by Ifeanyi Omeata
 <details>
   <summary>Defensive Security Intro </summary>
  
-  ##### 1. Some of the tasks that are related to defensive security include:
-
-  ##### 2. Security Operations Center (SOC)
-
-  ##### 3. Threat Intelligence
-
-  ##### 4. Digital Forensics
-
+  ##### 1. Some of the tasks 
+  - [ ] URIs 
 
 </details>
