@@ -4,7 +4,7 @@ by Ifeanyi Omeata
 ##### Pre-Security
 
 <details>
-  <summary>Pre-Security Course</summary>
+  <summary>Introduction to Cyber Security</summary>
 
 <details>
   <summary>Gobuster Offensive Attack</summary>
