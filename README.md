@@ -4,7 +4,7 @@ by Ifeanyi Omeata
 ##### Introduction to Cyber Security
 
 <details>
-  <summary>Gobuster</summary>
+  <summary>Gobuster Offensive Attack</summary>
   
   ##### 1. What is Gobuster?
   - [ ] [Gobuster](https://github.com/OJ/gobuster) is a tool used to brute-force: 
