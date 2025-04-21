@@ -45,19 +45,28 @@ by Ifeanyi Omeata
  
   ##### The 3 Types of Malicious Software are:
 
-- [ ] A virus is a piece of code (part of a program) that attaches itself to a program. It is designed to spread from one computer to another and works by altering, overwriting, and deleting files once it infects a computer. The result ranges from the computer becoming slow to unusable.
-- [ ] Trojan Horse is a program that shows one desirable function but hides a malicious function underneath. For example, a victim might download a video player from a shady website that gives the attacker complete control over their system.
-- [ ] Ransomware is a malicious program that encrypts the user’s files. Encryption makes the files unreadable without knowing the encryption password. The attacker offers the user the encryption password if the user is willing to pay a “ransom.”
+- [ ] A virus - is a piece of code (part of a program) that attaches itself to a program. It is designed to spread from one computer to another and works by altering, overwriting, and deleting files once it infects a computer. The result ranges from the computer becoming slow to unusable.
+- [ ] Trojan Horse - is a program that shows one desirable function but hides a malicious function underneath. For example, a victim might download a video player from a shady website that gives the attacker complete control over their system.
+- [ ] Ransomware - is a malicious program that encrypts the user’s files. Encryption makes the files unreadable without knowing the encryption password. The attacker offers the user the encryption password if the user is willing to pay a “ransom.”
 
 </details>
 
 <details>
-  <summary>The 3 Types of Malicious Software </summary>
+  <summary>The 2 ways to learn about malicious programs </summary>
  
-  ##### The 3 Types of Malicious Software are:
+  ##### The 2 ways to learn about malicious programs are:
 
-- [ ] A virus is a piece of code (part of a program) that attaches itself to a program. It is designed to spread from one computer to another and works by altering, overwriting, and deleting files once it infects a computer. The result ranges from the computer becoming slow to unusable.
-- [ ] Trojan Horse is a program that shows one desirable function but hides a malicious function underneath. For example, a victim might download a video player from a shady website that gives the attacker complete control over their system.
-- [ ] Ransomware is a malicious program that encrypts the user’s files. Encryption makes the files unreadable without knowing the encryption password. The attacker offers the user the encryption password if the user is willing to pay a “ransom.”
+- [ ] Static analysis - works by inspecting the malicious program without running it. This usually requires solid knowledge of assembly language (the processor’s instruction set, i.e., the computer’s fundamental instructions).
+- [ ] Dynamic analysis - works by running the malware in a controlled environment and monitoring its activities. It lets you observe how the malware behaves when running.
+
+</details>
+
+<details>
+  <summary>The 2 ways to learn about malicious programs </summary>
+ 
+  ##### The 2 ways to learn about malicious programs are:
+
+- [ ] Static analysis - works by inspecting the malicious program without running it. This usually requires solid knowledge of assembly language (the processor’s instruction set, i.e., the computer’s fundamental instructions).
+- [ ] Dynamic analysis - works by running the malware in a controlled environment and monitoring its activities. It lets you observe how the malware behaves when running.
 
 </details>
