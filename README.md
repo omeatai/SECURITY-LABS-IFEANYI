@@ -92,6 +92,15 @@ by Ifeanyi Omeata
 </details>
 
 <details>
+  <summary>Which kind of malware requires the user to pay money to regain access to their files?</summary>
+ 
+  ##### Ransomware
+
+  - [ ] Ransomware - is a malicious program that encrypts the user’s files. Encryption makes the files unreadable without knowing the encryption password. The attacker offers the user the encryption password if the user is willing to pay a “ransom.”
+
+</details>
+
+<details>
   <summary>Open-source databases for searching for malicious IPs </summary>
  
   ##### There are many open-source databases out there for searching for malicious IPs:
@@ -99,57 +108,52 @@ by Ifeanyi Omeata
    - [ ] VirusTotal
    - [ ] AbuseIPDB
    - [ ] Cisco Talos Intelligence
-   - [ ] 143.110.250.149
 
 </details>
-
-<details>
-  <summary>Which kind of malware requires the user to pay money to regain access to their files?</summary>
- 
-  ##### Ransomware
-
-  - [ ] Ransomware 
-
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </details>
 
 <details>
   <summary>2-Network Fundamentals</summary>
  
-  ##### Ransomware
+<details>
+  <summary>Open-source databases for searching for malicious IPs </summary>
+ 
+  ##### There are many open-source databases out there for searching for malicious IPs:
 
-  - [ ] Ransomware 
+   - [ ] VirusTotal
+   - [ ] AbuseIPDB
+   - [ ] Cisco Talos Intelligence
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </details>
 
