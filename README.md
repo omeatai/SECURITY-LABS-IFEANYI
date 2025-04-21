@@ -62,11 +62,33 @@ by Ifeanyi Omeata
 </details>
 
 <details>
-  <summary>The 2 ways to learn about malicious programs </summary>
+  <summary>What would you call a team of cyber security professionals that monitors a network and its systems for malicious events? </summary>
  
-  ##### The 2 ways to learn about malicious programs are:
-
-- [ ] Static analysis - works by inspecting the malicious program without running it. This usually requires solid knowledge of assembly language (the processor’s instruction set, i.e., the computer’s fundamental instructions).
-- [ ] Dynamic analysis - works by running the malware in a controlled environment and monitoring its activities. It lets you observe how the malware behaves when running.
+  ##### Security Operations Center
 
 </details>
+
+<details>
+  <summary>What does DFIR stand for?</summary>
+ 
+  ##### Digital Forensics and Incident Response
+
+</details>
+
+<details>
+  <summary>Which kind of malware requires the user to pay money to regain access to their files?</summary>
+ 
+  ##### Ransomware
+
+</details>
+
+<details>
+  <summary>Which kind of malware requires the user to pay money to regain access to their files?</summary>
+ 
+  ##### Ransomware
+
+</details>
+
+
+
+
