@@ -105,6 +105,76 @@ by Ifeanyi Omeata
  
   ##### Ransomware
 
+  - [ ] Ransomware 
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
+
+<details>
+  <summary>Network Fundamentals</summary>
+ 
+  ##### Ransomware
+
+  - [ ] Ransomware 
+
+</details>
+
+<details>
+  <summary>How The Web Works</summary>
+ 
+  ##### Ransomware
+
+  - [ ] Ransomware 
+
+</details>
+
+<details>
+  <summary>Linux Fundamentals</summary>
+ 
+  ##### Ransomware
+
+  - [ ] Ransomware 
+
+</details>
+
+<details>
+  <summary>Windows Fundamentals</summary>
+ 
+  ##### Ransomware
+
+  - [ ] Ransomware 
+
 </details>
 
 
@@ -115,10 +185,3 @@ by Ifeanyi Omeata
 
 
 
-
-
-
-
-
-
-</details>
