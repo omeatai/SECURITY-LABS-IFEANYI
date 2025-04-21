@@ -79,12 +79,21 @@ by Ifeanyi Omeata
  
   ##### Digital Forensics and Incident Response
 
+  - [ ] Forensics is the application of science to investigate crimes and establish facts. With the use and spread of digital systems, such as computers and smartphones, a new branch of forensics was born to investigate related crimes: computer forensics, which later evolved into digital forensics.
+  - [ ] In defensive security, the focus of digital forensics shifts to analyzing evidence of an attack and its perpetrators and other areas such as intellectual property theft, cyber espionage, and possession of unauthorized content. 
+  - [ ] An incident usually refers to a data breach or cyber attack; however, in some cases, it can be something less critical, such as a misconfiguration, an intrusion attempt, or a policy violation.
+  - [ ] Examples of a cyber attack include an attacker making our network or systems inaccessible, defacing (changing) the public website, and data breach (stealing company data).
+  - [ ] How would you respond to a cyber attack? Incident response specifies the methodology that should be followed to handle such a case.
+  - [ ] The aim is to reduce damage and recover in the shortest time possible. Ideally, you would develop a plan that is ready for incident response.
+
 </details>
 
 <details>
   <summary>Which kind of malware requires the user to pay money to regain access to their files?</summary>
  
   ##### Ransomware
+
+   - [ ] Ransomware is a malicious program that encrypts the user’s files. Encryption makes the files unreadable without knowing the encryption password. The attacker offers the user the encryption password if the user is willing to pay a “ransom.”
 
 </details>
 
