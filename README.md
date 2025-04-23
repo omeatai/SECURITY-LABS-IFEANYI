@@ -117,17 +117,18 @@ by Ifeanyi Omeata
   <summary>2-Network Fundamentals</summary>
  
 <details>
-  <summary>Open-source databases for searching for malicious IPs </summary>
- 
-  ##### There are many open-source databases out there for searching for malicious IPs:
+  <summary>What is the key term for devices that are connected together? </summary>
 
-   - [ ] VirusTotal
-   - [ ] AbuseIPDB
-   - [ ] Cisco Talos Intelligence
+   - [ ] Network
 
 </details>
 
+<details>
+  <summary>Who invented the World Wide Web? </summary>
 
+   - [ ] Tim Berners-Lee
+
+</details>
 
 
 
