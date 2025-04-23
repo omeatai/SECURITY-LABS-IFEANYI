@@ -130,6 +130,13 @@ by Ifeanyi Omeata
 
 </details>
 
+<details>
+  <summary>What protocol does ping use? </summary>
+
+   - [ ] ICMP
+   - [ ] Ping uses ICMP (Internet Control Message Protocol) packets to determine the performance of a connection between devices, for example, if the connection exists or is reliable.
+
+</details>
 
 
 
