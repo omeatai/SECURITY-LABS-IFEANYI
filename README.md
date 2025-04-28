@@ -1,10 +1,9 @@
 # SECURITY-LABS-IFEANYI
 by Ifeanyi Omeata
 
-##### Pre-Security
+## Pre-Security
 
-<details>
-  <summary>1-Introduction to Cyber Security</summary>
+##### 1-Introduction to Cyber Security
 
 <details>
   <summary>Gobuster Offensive Attack</summary>
@@ -111,10 +110,7 @@ by Ifeanyi Omeata
 
 </details>
 
-</details>
-
-<details>
-  <summary>2-Network Fundamentals</summary>
+##### 2-Network Fundamentals
  
 <details>
   <summary>What is the key term for devices that are connected together? </summary>
@@ -139,58 +135,12 @@ by Ifeanyi Omeata
 </details>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</details>
-
-<details>
-  <summary>3-How The Web Works</summary>
+##### 3-How The Web Works
  
-  ##### Ransomware
+##### 4-Linux Fundamentals
 
-  - [ ] Ransomware 
+##### 5-Windows Fundamentals
 
-</details>
-
-<details>
-  <summary>4-Linux Fundamentals</summary>
- 
-  ##### Ransomware
-
-  - [ ] Ransomware 
-
-</details>
-
-<details>
-  <summary>5-Windows Fundamentals</summary>
- 
-  ##### Ransomware
-
-  - [ ] Ransomware 
-
-</details>
 
 
 
