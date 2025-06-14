@@ -4,12 +4,12 @@ by Ifeanyi Omeata
 ## Pre-Security (TRY-HACK-ME)
 
 - [ ] 1-Introduction to Cyber Security
-  - [x] [Offensive Security Intro]()
-  - [x] [Defensive Security Intro]()
-  - [x] [Careers in Cyber Security]()
+  - [x] [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro)
+  - [x] [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro)
+  - [x] [Careers in Cyber Security](https://tryhackme.com/room/careersincyber)
 - [ ] 2-Network Fundamentals
-  - [x] [What is Networking?]()
-  - [ ] [Intro to LAN]()
+  - [x] [What is Networking?](https://tryhackme.com/room/whatisnetworking)
+  - [ ] [Intro to LAN](https://tryhackme.com/room/introtolan)
   - [ ] [OSI Model]()
   - [ ] [Packets & Frames]()
   - [ ] [Extending Your Network]()
@@ -28,7 +28,7 @@ by Ifeanyi Omeata
   - [ ] [Windows Fundamentals Part 3]()
 
 <details>
-<summary>Using Gobuster To Find Hidden Website Pages</summary>
+<summary>Offensive Security Intro - Using Gobuster To Find Hidden Website Pages</summary>
 
   ```
   gobuster -u http://fakebank.thm -w wordlist.txt dir
