@@ -4,11 +4,11 @@ by Ifeanyi Omeata
 ## Pre-Security
 
 - [ ] 1-Introduction to Cyber Security
-  - [ ] [Offensive Security Intro]()
-  - [ ] [Defensive Security Intro]()
-  - [ ] [Careers in Cyber Security]()
+  - [x] [Offensive Security Intro]()
+  - [x] [Defensive Security Intro]()
+  - [x] [Careers in Cyber Security]()
 - [ ] 2-Network Fundamentals
-  - [ ] [What is Networking?]()
+  - [x] [What is Networking?]()
   - [ ] [Intro to LAN]()
   - [ ] [OSI Model]()
   - [ ] [Packets & Frames]()
