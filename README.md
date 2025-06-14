@@ -14,11 +14,18 @@ by Ifeanyi Omeata
   - [ ] [Packets & Frames]()
   - [ ] [Extending Your Network]()
 - [ ] 3-How The Web Works
- 
+  - [ ] [DNS in Detail]()
+  - [ ] [HTTP in Detail]()
+  - [ ] [How Websites Work]()
+  - [ ] [Putting it all together]()
 - [ ] 4-Linux Fundamentals
-
+  - [ ] [Linux Fundamentals Part 1]()
+  - [ ] [Linux Fundamentals Part 2]()
+  - [ ] [Linux Fundamentals Part 3]()
 - [ ] 5-Windows Fundamentals
-
+  - [ ] [Windows Fundamentals Part 1]()
+  - [ ] [Windows Fundamentals Part 2]()
+  - [ ] [Windows Fundamentals Part 3]()
 
 <details>
 <summary>Using Gobuster To Find Hidden Website Pages</summary>
