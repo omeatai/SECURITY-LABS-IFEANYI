@@ -9,7 +9,7 @@ by Ifeanyi Omeata
   - [x] [Careers in Cyber Security](https://tryhackme.com/room/careersincyber)
 - [ ] 2-Network Fundamentals
   - [x] [What is Networking?](https://tryhackme.com/room/whatisnetworking)
-  - [ ] [Intro to LAN](https://tryhackme.com/room/introtolan)
+  - [x] [Intro to LAN](https://tryhackme.com/room/introtolan)
   - [ ] [OSI Model]()
   - [ ] [Packets & Frames]()
   - [ ] [Extending Your Network]()
