@@ -4,17 +4,7 @@ by Ifeanyi Omeata
 ## Pre-Security
 
 - [ ] 1-Introduction to Cyber Security
-
-<details>
-  <summary>Using Gobuster To Find Hidden Website Pages</summary>
-
-  ```
-  gobuster -u http://fakebank.thm -w wordlist.txt dir
-  ```
-  - [ ] -u is used to state the website we're scanning
-  - [ ] -w takes a list of words to iterate through to find hidden pages.
-
-</details>
+  - [ ] [1-Introduction to Cyber Security]()
 
 
 - [ ] 2-Network Fundamentals
@@ -28,6 +18,16 @@ by Ifeanyi Omeata
 
 
 
+<details>
+  <summary>Using Gobuster To Find Hidden Website Pages</summary>
+
+  ```
+  gobuster -u http://fakebank.thm -w wordlist.txt dir
+  ```
+  - [ ] -u is used to state the website we're scanning
+  - [ ] -w takes a list of words to iterate through to find hidden pages.
+
+</details>
 
 
 
