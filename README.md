@@ -17,13 +17,13 @@ by Ifeanyi Omeata
 </details>
 
 
-- [ ] ##### 2-Network Fundamentals
+- [ ] 2-Network Fundamentals
 
-- [ ] ##### 3-How The Web Works
+- [ ] 3-How The Web Works
  
-- [ ] ##### 4-Linux Fundamentals
+- [ ] 4-Linux Fundamentals
 
-- [ ] ##### 5-Windows Fundamentals
+- [ ] 5-Windows Fundamentals
 
 
 
