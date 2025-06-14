@@ -84,8 +84,35 @@ by Ifeanyi Omeata
   - [ ] [SQL Fundamentals]()
   - [ ] [Burp Suite: The Basics]()
   - [ ] [OWASP Top 10 - 2021]()
+- [ ] 9-Offensive Security Tooling
+  - [ ] [Hydra]()
+  - [ ] [Gobuster: The Basics]()
+  - [ ] [Shells Overview]()
+  - [ ] [SQLMap: The Basics]()
+- [ ] 10-Defensive Security
+  - [ ] [Defensive Security Intro]()
+  - [ ] [SOC Fundamentals]()
+  - [ ] [Digital Forensics Fundamentals]()
+  - [ ] [Incident Response Fundamentals]()
+  - [ ] [Logs Fundamentals]()
+- [ ] 11-Security Solutions
+  - [ ] [Introduction to SIEM]()
+  - [ ] [Firewall Fundamentals]()
+  - [ ] [IDS Fundamentals]()
+  - [ ] [Vulnerability Scanner Overview]()
+- [ ] 12-Defensive Security Tooling
+  - [ ] [CyberChef: The Basics]()
+  - [ ] [CAPA: The Basics]()
+  - [ ] [REMnux: Getting Started]()
+  - [ ] [FlareVM: Arsenal of Tools]()
+- [ ] 13-Build Your Cyber Security Career
+  - [ ] [Security Principles]()
+  - [ ] [Careers in Cyber]()
+  - [ ] [Training Impact on Teams]()
 
- 
+
+
+
 
 
 
