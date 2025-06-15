@@ -12,7 +12,7 @@ by Ifeanyi Omeata
   - [x] [Intro to LAN](https://tryhackme.com/room/introtolan)
   - [x] [OSI Model](https://tryhackme.com/room/osimodelzi)
   - [x] [Packets & Frames](https://tryhackme.com/room/packetsframes)
-  - [ ] [Extending Your Network]()
+  - [x] [Extending Your Network](https://tryhackme.com/room/extendingyournetwork)
 - [ ] 3-How The Web Works
   - [ ] [DNS in Detail]()
   - [ ] [HTTP in Detail]()
