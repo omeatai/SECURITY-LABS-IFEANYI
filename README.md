@@ -11,7 +11,7 @@ by Ifeanyi Omeata
   - [x] [What is Networking?](https://tryhackme.com/room/whatisnetworking)
   - [x] [Intro to LAN](https://tryhackme.com/room/introtolan)
   - [x] [OSI Model](https://tryhackme.com/room/osimodelzi)
-  - [ ] [Packets & Frames]()
+  - [x] [Packets & Frames](https://tryhackme.com/room/packetsframes)
   - [ ] [Extending Your Network]()
 - [ ] 3-How The Web Works
   - [ ] [DNS in Detail]()
