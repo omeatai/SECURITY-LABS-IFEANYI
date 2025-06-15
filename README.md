@@ -10,7 +10,7 @@ by Ifeanyi Omeata
 - [ ] 2-Network Fundamentals
   - [x] [What is Networking?](https://tryhackme.com/room/whatisnetworking)
   - [x] [Intro to LAN](https://tryhackme.com/room/introtolan)
-  - [ ] [OSI Model]()
+  - [x] [OSI Model](https://tryhackme.com/room/osimodelzi)
   - [ ] [Packets & Frames]()
   - [ ] [Extending Your Network]()
 - [ ] 3-How The Web Works
