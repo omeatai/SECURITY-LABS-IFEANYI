@@ -14,7 +14,7 @@ by Ifeanyi Omeata
   - [x] [Packets & Frames](https://tryhackme.com/room/packetsframes)
   - [x] [Extending Your Network](https://tryhackme.com/room/extendingyournetwork)
 - [ ] 3-How The Web Works
-  - [ ] [DNS in Detail]()
+  - [x] [DNS in Detail](https://tryhackme.com/room/dnsindetail)
   - [ ] [HTTP in Detail]()
   - [ ] [How Websites Work]()
   - [ ] [Putting it all together]()
