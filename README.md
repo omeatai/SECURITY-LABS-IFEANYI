@@ -45,8 +45,31 @@ by Ifeanyi Omeata
   ```
 
 </details>
+<details>
+<summary>DNS in Detail - TXT record of website.thm </summary>
 
- 
+  ```
+  nslookup --type=TXT website.thm
+  ```
+
+</details>
+<details>
+<summary>DNS in Detail - numerical priority value for the MX record </summary>
+
+  ```
+  nslookup --type=MX website.thm
+  ```
+
+</details>
+<details>
+<summary>DNS in Detail - IP address for the A record of www.website.thm </summary>
+
+  ```
+  nslookup --type=A website.thm
+  ```
+
+</details>
+  
 
 ## Cyber Security 101 (TRY-HACK-ME)
 
