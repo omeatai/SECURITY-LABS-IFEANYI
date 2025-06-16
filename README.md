@@ -37,6 +37,14 @@ by Ifeanyi Omeata
   - [ ] -w takes a list of words to iterate through to find hidden pages.
 
 </details>
+<details>
+<summary>DNS in Detail - CNAME of shop.website.thm </summary>
+
+  ```
+  nslookup --type=CNAME shop.website.thm
+  ```
+
+</details>
 
  
 
