@@ -15,7 +15,7 @@ by Ifeanyi Omeata
   - [x] [Extending Your Network](https://tryhackme.com/room/extendingyournetwork)
 - [ ] 3-How The Web Works
   - [x] [DNS in Detail](https://tryhackme.com/room/dnsindetail)
-  - [ ] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
+  - [x] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
   - [ ] [How Websites Work]()
   - [ ] [Putting it all together]()
 - [ ] 4-Linux Fundamentals
