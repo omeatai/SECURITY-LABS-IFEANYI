@@ -16,7 +16,7 @@ by Ifeanyi Omeata
 - [ ] 3-How The Web Works
   - [x] [DNS in Detail](https://tryhackme.com/room/dnsindetail)
   - [x] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
-  - [ ] [How Websites Work]()
+  - [x] [How Websites Work](https://tryhackme.com/room/howwebsiteswork)
   - [ ] [Putting it all together]()
 - [ ] 4-Linux Fundamentals
   - [ ] [Linux Fundamentals Part 1]()
