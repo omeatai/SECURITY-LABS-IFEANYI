@@ -17,7 +17,7 @@ by Ifeanyi Omeata
   - [x] [DNS in Detail](https://tryhackme.com/room/dnsindetail)
   - [x] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
   - [x] [How Websites Work](https://tryhackme.com/room/howwebsiteswork)
-  - [ ] [Putting it all together]()
+  - [x] [Putting it all together](https://tryhackme.com/room/puttingitalltogether)
 - [ ] 4-Linux Fundamentals
   - [ ] [Linux Fundamentals Part 1]()
   - [ ] [Linux Fundamentals Part 2]()
