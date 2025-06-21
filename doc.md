@@ -205,10 +205,18 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - grep </summary>
+<summary>Linux Fundamentals Part 1 - grep (search for contents in file) </summary>
 
   ```
+  tryhackme@linux1:~/folder4$ ls
+  note.txt
 
+  tryhackme@linux1:~/folder4$ cat note.txt 
+  Hello World!
+  81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200
+
+  tryhackme@linux1:~/folder4$ grep "81.143.211.90" note.txt 
+  81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200
   ```
 
 </details>
