@@ -68,7 +68,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - Echo </summary>
+<summary>Linux Fundamentals Part 1 - echo </summary>
 
   ```
   tryhackme@linux1:~$ echo "Hello World"
@@ -78,7 +78,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - Whoami </summary>
+<summary>Linux Fundamentals Part 1 - whoami </summary>
 
   ```
   tryhackme@linux1:~$ whoami
