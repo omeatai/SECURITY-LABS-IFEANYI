@@ -385,7 +385,11 @@
 <summary>Linux Fundamentals Part 2 - file (Determine the type of a file) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  myfile  myfolder  unknown1
+
+  tryhackme@linux2:~$ file myfile 
+  myfile: ASCII text
   ```
 
 </details>
