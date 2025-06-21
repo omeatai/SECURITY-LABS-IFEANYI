@@ -78,7 +78,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - whoami </summary>
+<summary>Linux Fundamentals Part 1 - whoami (check username) </summary>
 
   ```
   tryhackme@linux1:~$ whoami
@@ -88,7 +88,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - ls </summary>
+<summary>Linux Fundamentals Part 1 - ls (list files) </summary>
 
   ```
   tryhackme@linux1:~$ ls
@@ -114,7 +114,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - cd </summary>
+<summary>Linux Fundamentals Part 1 - cd (change directory) </summary>
 
   ```
   tryhackme@linux1:~$ ls
@@ -127,7 +127,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - cat </summary>
+<summary>Linux Fundamentals Part 1 - cat (show file data) </summary>
 
   ```
   tryhackme@linux1:~/folder4$ ls
@@ -143,7 +143,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - pwd </summary>
+<summary>Linux Fundamentals Part 1 - pwd (print working directory) </summary>
 
   ```
   tryhackme@linux1:~$ ls
@@ -170,7 +170,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - wc </summary>
+<summary>Linux Fundamentals Part 1 - wc (line entries) </summary>
 
   ```
   tryhackme@linux1:~$ cd folder4
@@ -185,10 +185,22 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - {echo >>} </summary>
+<summary>Linux Fundamentals Part 1 - {echo >>} (Append contents to file) </summary>
 
   ```
+  tryhackme@linux1:~/folder4$ ls
+  note.txt
 
+  tryhackme@linux1:~/folder4$ cat note.txt 
+  Hello World!
+
+  tryhackme@linux1:~/folder4$ echo '81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200' >> note.txt 
+  tryhackme@linux1:~/folder4$ cat note.txt 
+  Hello World!
+  81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200
+
+  tryhackme@linux1:~/folder4$ wc -l note.txt 
+  2 note.txt
   ```
 
 </details>
