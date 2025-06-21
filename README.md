@@ -110,12 +110,11 @@ by Ifeanyi Omeata
 
 - [ ] 1-Start Your Cyber Security Journey
   - [ ] [Offensive Security Intro]()
-  - [ ] [Defensive Security Intro]()
-  - [ ] [Search Skills]()
 - [ ] 2-Linux Fundamentals
   - [ ] [Linux Fundamentals Part 1]()
-  - [ ] [Linux Fundamentals Part 2]()
-  - [ ] [Linux Fundamentals Part 3]()
+     
+
+
 
 
 
