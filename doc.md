@@ -394,9 +394,56 @@
 
 </details>
 
+<details>
+<summary>Linux Fundamentals Part 2 - su (Switch between Users) </summary>
 
+  ```
+  tryhackme@linux2:~$ su -l user2
+  Password: 
+  user2@linux2:~$
 
+  user2@linux2:~$ su tryhackme
+  Password:
+  tryhackme@linux2:/home/user2$
+  ```
 
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - etc (etcetera folder) </summary>
+
+  ```
+  tryhackme@linux2:~$ cd /etc
+  tryhackme@linux2:/etc$ ls
+  
+  ModemManager                   console-setup         fuse.conf            issue.net        mailcap                 pam.d                    rpc           timezone
+  NetworkManager                 cron.d                fwupd                kernel           mailcap.order           passwd                   rsyslog.conf  tmpfiles.d
+  PackageKit                     cron.daily            gai.conf             kernel-img.conf  manpath.config          passwd-                  rsyslog.d     ubuntu-advantage
+  X11                            cron.hourly           groff                landscape        mdadm                   perl                     screenrc      ucf.conf
+  acpi                           cron.monthly          group                ld.so.cache      mime.types              pki                      security      udev
+  adduser.conf                   cron.weekly           group-               ld.so.conf       mke2fs.conf             pm                       selinux       udisks2
+  alternatives                   crontab               grub.d               ld.so.conf.d     modprobe.d              polkit-1                 services      ufw
+  apache2                        cryptsetup-initramfs  gshadow              ldap             modules                 pollinate                shadow        update-manager
+  apparmor                       crypttab              gshadow-             legal            modules-load.d          popularity-contest.conf  shadow-       update-motd.d
+  apparmor.d                     dbus-1                gss                  libaudit.conf    mtab                    profile                  shells        update-notifier
+  apport                         dconf                 hdparm.conf          libblockdev      multipath               profile.d                skel          usb_modeswitch.conf
+  apt                            debconf.conf          hibagent-config.cfg  locale.alias     multipath.conf          protocols                sos           usb_modeswitch.d
+  at.deny                        debian_version        hibinit-config.cfg   locale.gen       nanorc                  python3                  ssh           vim
+  bash.bashrc                    default               host.conf            localtime        netplan                 python3.8                ssl           vmware-tools
+  bash_completion                deluser.conf          hostname             logcheck         network                 rc0.d                    subgid        vtrgb
+  bash_completion.d              depmod.d              hosts                login.defs       networkd-dispatcher     rc1.d                    subgid-       wgetrc
+  bindresvport.blacklist         dhcp                  hosts.allow          logrotate.conf   networks                rc2.d                    subuid        xattr.conf
+  binfmt.d                       dpkg                  hosts.deny           logrotate.d      newt                    rc3.d                    subuid-       xdg
+  byobu                          e2scrub.conf          init.d               lsb-release      nsswitch.conf           rc4.d                    sudoers       zsh_command_not_found
+  ca-certificates                ec2_version           initramfs-tools      ltrace.conf      opt                     rc5.d                    sudoers.d
+  ca-certificates.conf           environment           inputrc              lvm              os-release              rc6.d                    sysctl.conf
+  ca-certificates.conf.dpkg-old  ethertypes            iproute2             machine-id       overlayroot.conf        rcS.d                    sysctl.d
+  calendar                       fonts                 iscsi                magic            overlayroot.local.conf  resolv.conf              systemd
+  cloud                          fstab                 issue                magic.mime       pam.conf                rmt                      terminfo
+
+  ```
+
+</details>
 
 
 
