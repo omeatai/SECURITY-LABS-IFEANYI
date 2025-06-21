@@ -14,10 +14,8 @@
 <summary>DNS in Detail - CNAME of shop.website.thm </summary>
 
   ```
-  nslookup --type=CNAME shop.website.thm
-  ```
+  $ nslookup --type=CNAME shop.website.thm
 
-  ```
   Server: 127.0.0.53
   Address: 127.0.0.53#53
   
@@ -30,10 +28,8 @@
 <summary>DNS in Detail - TXT record of website.thm </summary>
 
   ```
-  nslookup --type=TXT website.thm
-  ```
+  $ nslookup --type=TXT website.thm
 
-  ```
   Server: 127.0.0.53
   Address: 127.0.0.53#53
   
@@ -46,10 +42,8 @@
 <summary>DNS in Detail - numerical priority value for the MX record </summary>
 
   ```
-  nslookup --type=MX website.thm
-  ```
+  $ nslookup --type=MX website.thm
 
-  ```
   Server: 127.0.0.53
   Address: 127.0.0.53#53
   
@@ -62,10 +56,8 @@
 <summary>DNS in Detail - IP address for the A record of www.website.thm </summary>
 
   ```
-  nslookup --type=A website.thm
-  ```
+  $ nslookup --type=A website.thm
 
-  ```
   Server: 127.0.0.53
   Address: 127.0.0.53#53
   
@@ -80,9 +72,7 @@
 
   ```
   tryhackme@linux1:~$ echo "Hello World"
-  ```
 
-  ```
   Hello World
   ```
 
@@ -92,9 +82,7 @@
 
   ```
   tryhackme@linux1:~$ whoami
-  ```
 
-  ```
   tryhackme
   ```
 
@@ -104,17 +92,13 @@
 
   ```
   tryhackme@linux1:~$ ls
-  ```
 
-  ```
   access.log  folder1  folder2  folder3  folder4
   ```
 
   ```
   tryhackme@linux1:~$ ls -lrt
-  ```
 
-  ```
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder1
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder2
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder3
@@ -124,9 +108,7 @@
 
   ```
   tryhackme@linux1:~$ ls folder4
-  ```
 
-  ```
   note.txt
   ```
 
