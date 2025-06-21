@@ -130,6 +130,12 @@
   ```
 
   ```
+  -l: Long listing format (shows details like permissions, owner, size, modification date)
+  -r: Reverse order while sorting
+  -t: Sort by modification time, newest files first
+  ```
+
+  ```
   tryhackme@linux2:~$ ls -la
   
   total 40
