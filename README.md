@@ -1,7 +1,7 @@
 # SECURITY-LABS-IFEANYI
 by Ifeanyi Omeata
 
-- [ ] [Documentation](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/doc.md)
+- [ ] [Documentation for TryHackMe](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/doc.md)
 
 ## Pre-Security (TRY-HACK-ME)
 
