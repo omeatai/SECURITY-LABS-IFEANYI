@@ -113,7 +113,19 @@
   ```
 
 </details>
+<details>
+<summary>Linux Fundamentals Part 1 - cd </summary>
 
+  ```
+  tryhackme@linux1:~$ ls
+  access.log  folder1  folder2  folder3  folder4
+
+  tryhackme@linux1:~$ cd folder4
+  tryhackme@linux1:~/folder4$ ls
+  note.txt
+  ```
+
+</details>
 
 
 
