@@ -100,7 +100,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - Whoami </summary>
+<summary>Linux Fundamentals Part 1 - Ls </summary>
 
   ```
   tryhackme@linux1:~$ ls
@@ -108,6 +108,18 @@
 
   ```
   access.log  folder1  folder2  folder3  folder4
+  ```
+
+  ```
+  tryhackme@linux1:~$ ls -lrt
+  ```
+
+  ```
+  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder1
+  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder2
+  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder3
+  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder4
+  -rw-rw-r-- 1 tryhackme tryhackme 65522 May 10  2021 access.log
   ```
 
   ```
