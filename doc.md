@@ -1,1 +1,114 @@
+## Pre-Security (TRY-HACK-ME)
+
+<details>
+<summary>Offensive Security Intro - Using Gobuster To Find Hidden Website Pages</summary>
+
+  ```
+  gobuster -u http://fakebank.thm -w wordlist.txt dir
+  ```
+  - [ ] -u is used to state the website we're scanning
+  - [ ] -w takes a list of words to iterate through to find hidden pages.
+
+</details>
+<details>
+<summary>DNS in Detail - CNAME of shop.website.thm </summary>
+
+  ```
+  nslookup --type=CNAME shop.website.thm
+  ```
+
+  ```
+  Server: 127.0.0.53
+  Address: 127.0.0.53#53
+  
+  Non-authoritative answer:
+  shop.website.thm canonical name = shops.myshopify.com
+  ```
+
+</details>
+<details>
+<summary>DNS in Detail - TXT record of website.thm </summary>
+
+  ```
+  nslookup --type=TXT website.thm
+  ```
+
+  ```
+  Server: 127.0.0.53
+  Address: 127.0.0.53#53
+  
+  Non-authoritative answer:
+  website.thm text = "THM{7012BBA60997F35A9516C2E16D2944FF}"
+  ```
+
+</details>
+<details>
+<summary>DNS in Detail - numerical priority value for the MX record </summary>
+
+  ```
+  nslookup --type=MX website.thm
+  ```
+
+  ```
+  Server: 127.0.0.53
+  Address: 127.0.0.53#53
+  
+  Non-authoritative answer:
+  website.thm mail exchanger = 30 alt4.aspmx.l.google.com
+  ```
+
+</details>
+<details>
+<summary>DNS in Detail - IP address for the A record of www.website.thm </summary>
+
+  ```
+  nslookup --type=A website.thm
+  ```
+
+  ```
+  Server: 127.0.0.53
+  Address: 127.0.0.53#53
+  
+  Non-authoritative answer:
+  Name: website.thm
+  Address: 10.10.10.10
+  ```
+
+</details>
+
+
+
+
+
+<hr/>
+
+## Cyber Security 101 (TRY-HACK-ME)
+
+<details>
+<summary>D </summary>
+
+  ```
+
+  ```
+
+  ```
+
+  ```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
