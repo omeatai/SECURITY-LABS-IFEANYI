@@ -291,9 +291,59 @@
 
 </details>
 
+<details>
+<summary>Linux Fundamentals Part 2 - touch (Create file) </summary>
 
+  ```
+  
+  ```
 
+</details>
 
+<details>
+<summary>Linux Fundamentals Part 2 - mkdir (Create a folder) </summary>
+
+  ```
+  
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - cp (Copy a file or folder) </summary>
+
+  ```
+  
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - mv (Move a file or folder) </summary>
+
+  ```
+  
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - rm (Remove a file or folder) </summary>
+
+  ```
+  
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - file (Determine the type of a file) </summary>
+
+  ```
+  
+  ```
+
+</details>
 
 
 
