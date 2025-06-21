@@ -97,19 +97,73 @@
   ```
 
   ```
-  tryhackme@linux1:~$ ls -lrt
-
-  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder1
-  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder2
-  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder3
-  drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder4
-  -rw-rw-r-- 1 tryhackme tryhackme 65522 May 10  2021 access.log
-  ```
-
-  ```
   tryhackme@linux1:~$ ls folder4
 
   note.txt
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls -a
+
+  .   .bash_logout  .cache    important  myfolder
+  ..  .bashrc       .profile  myfile     unknown1
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls -l
+  
+  total 16
+  -rw-r--r-- 1 user2     user2       14 May  5  2021 important
+  -rw-r--r-- 1 tryhackme tryhackme   16 May  5  2021 myfile
+  drwxr-xr-x 2 tryhackme tryhackme 4096 May  4  2021 myfolder
+  -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls -lrt
+  
+  total 16
+  -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
+  drwxr-xr-x 2 tryhackme tryhackme 4096 May  4  2021 myfolder
+  -rw-r--r-- 1 user2     user2       14 May  5  2021 important
+  -rw-r--r-- 1 tryhackme tryhackme   16 May  5  2021 myfile
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls -la
+  
+  total 40
+  drwxr-xr-x 4 tryhackme tryhackme 4096 Jun 21 14:48 .
+  drwxr-xr-x 5 root      root      4096 May  4  2021 ..
+  -rw-r--r-- 1 tryhackme tryhackme  220 May  4  2021 .bash_logout
+  -rw-r--r-- 1 tryhackme tryhackme 3771 May  4  2021 .bashrc
+  drwx------ 2 tryhackme tryhackme 4096 Jun 21 14:48 .cache
+  -rw-r--r-- 1 tryhackme tryhackme  807 May  4  2021 .profile
+  -rw-r--r-- 1 user2     user2       14 May  5  2021 important
+  -rw-r--r-- 1 tryhackme tryhackme   16 May  5  2021 myfile
+  drwxr-xr-x 2 tryhackme tryhackme 4096 May  4  2021 myfolder
+  -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls -lart
+
+  total 40
+  -rw-r--r-- 1 tryhackme tryhackme  807 May  4  2021 .profile
+  -rw-r--r-- 1 tryhackme tryhackme 3771 May  4  2021 .bashrc
+  -rw-r--r-- 1 tryhackme tryhackme  220 May  4  2021 .bash_logout
+  -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
+  drwxr-xr-x 2 tryhackme tryhackme 4096 May  4  2021 myfolder
+  drwxr-xr-x 5 root      root      4096 May  4  2021 ..
+  -rw-r--r-- 1 user2     user2       14 May  5  2021 important
+  -rw-r--r-- 1 tryhackme tryhackme   16 May  5  2021 myfile
+  drwx------ 2 tryhackme tryhackme 4096 Jun 21 14:48 .cache
+  drwxr-xr-x 4 tryhackme tryhackme 4096 Jun 21 14:48 .
+  ```
+
+  ```
+  ls --help
+  man ls
   ```
 
 </details>
