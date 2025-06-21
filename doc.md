@@ -362,7 +362,21 @@
 <summary>Linux Fundamentals Part 2 - rm (Remove a file or folder) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note_updated.txt  unknown1
+
+  tryhackme@linux2:~$ rm note_updated.txt 
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  unknown1
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  unknown1
+
+  tryhackme@linux2:~$ rm -R mydirectory/
+  tryhackme@linux2:~$ ls
+  important  myfile  myfolder  unknown1
   ```
 
 </details>
