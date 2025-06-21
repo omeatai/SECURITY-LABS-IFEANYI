@@ -106,7 +106,7 @@
   tryhackme@linux1:~$ ls
   ```
 
-  ```html
+  ```
   access.log  folder1  folder2  folder3  folder4
   ```
 
@@ -114,7 +114,7 @@
   tryhackme@linux1:~$ ls -lrt
   ```
 
-  ```bsh
+  ```
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder1
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder2
   drwxr-xr-x 2 tryhackme tryhackme  4096 May 10  2021 folder3
@@ -126,7 +126,7 @@
   tryhackme@linux1:~$ ls folder4
   ```
 
-  ```txt
+  ```
   note.txt
   ```
 
