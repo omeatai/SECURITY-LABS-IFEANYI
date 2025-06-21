@@ -170,6 +170,29 @@
 
 </details>
 <details>
+<summary>Linux Fundamentals Part 1 - wc </summary>
+
+  ```
+  tryhackme@linux1:~$ cd folder4
+  tryhackme@linux1:~/folder4$ ls
+  note.txt
+
+  tryhackme@linux1:~/folder4$ cat note.txt 
+  Hello World!
+  tryhackme@linux1:~/folder4$ wc -l note.txt 
+  1 note.txt
+  ```
+
+</details>
+<details>
+<summary>Linux Fundamentals Part 1 - {echo >>} </summary>
+
+  ```
+
+  ```
+
+</details>
+<details>
 <summary>Linux Fundamentals Part 1 - grep </summary>
 
   ```
@@ -177,8 +200,6 @@
   ```
 
 </details>
-
-
 
 
 
