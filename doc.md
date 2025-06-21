@@ -88,7 +88,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - Ls </summary>
+<summary>Linux Fundamentals Part 1 - ls </summary>
 
   ```
   tryhackme@linux1:~$ ls
@@ -155,8 +155,27 @@
   ```
 
 </details>
+<details>
+<summary>Linux Fundamentals Part 1 - find </summary>
 
+  ```
+  tryhackme@linux1:~$ ls
+  access.log  folder1  folder2  folder3  folder4
 
+  tryhackme@linux1:~$ find -name note.txt
+  ./folder4/note.txt
+  tryhackme@linux1:~$ find -name *.txt
+  ./folder4/note.txt
+  ```
+
+</details>
+<summary>Linux Fundamentals Part 1 - grep </summary>
+
+  ```
+
+  ```
+
+</details>
 
 
 
