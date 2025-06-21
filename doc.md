@@ -75,8 +75,30 @@
   ```
 
 </details>
+<details>
+<summary>Linux Fundamentals Part 1 - Echo </summary>
 
+  ```
+  tryhackme@linux1:~$ echo "Hello World"
+  ```
 
+  ```
+  Hello World
+  ```
+
+</details>
+<details>
+<summary>Linux Fundamentals Part 1 - Whoami </summary>
+
+  ```
+  tryhackme@linux1:~$ whoami
+  ```
+
+  ```
+  tryhackme
+  ```
+
+</details>
 
 
 
