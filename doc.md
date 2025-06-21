@@ -445,12 +445,72 @@
 
 </details>
 
+<details>
+<summary>Linux Fundamentals Part 2 - /var (variable folder - Application data) </summary>
+
+  ```
+  tryhackme@linux2:/etc$ cd .. && cd /var
+
+  tryhackme@linux2:/var$ ls
+  backups  cache  crash  lib  local  lock  log  mail  opt  run  snap  spool  tmp  www
+
+  tryhackme@linux2:/var$ ls  log/
+  alternatives.log       apache2     auth.log.2.gz          cloud-init.log  dmesg.1.gz  dpkg.log       kern.log       lastlog   syslog.2.gz           wtmp
+  alternatives.log.1     apt         btmp                   dist-upgrade    dmesg.2.gz  dpkg.log.1     kern.log.1     private   syslog.3.gz
+  alternatives.log.2.gz  auth.log    btmp.1                 dmesg           dmesg.3.gz  dpkg.log.2.gz  kern.log.2.gz  syslog    ubuntu-advantage.log
+  amazon                 auth.log.1  cloud-init-output.log  dmesg.0         dmesg.4.gz  journal        landscape      syslog.1  unattended-upgrades
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - /root (root folder - home directory for the "root" user) </summary>
+
+  ```
+  root@linux2:~# ls
+  myfile myfolder passwords.xlsx
+  ```
+
+</details>
+
+<details>
+<summary>Linux Fundamentals Part 2 - /tmp (temporary folder - ram temporary data) </summary>
+
+  ```
+  tryhackme@linux2:/$ cd /tmp
+
+  tryhackme@linux2:/tmp$ ls
+  snap-private-tmp                                                              systemd-private-0886ccb76384493bbc69c4ba48766cb4-systemd-logind.service-wXpcmh
+  systemd-private-0886ccb76384493bbc69c4ba48766cb4-ModemManager.service-1pxeJh  systemd-private-0886ccb76384493bbc69c4ba48766cb4-systemd-resolved.service-zp0jOi
+  systemd-private-0886ccb76384493bbc69c4ba48766cb4-apache2.service-BDYx8f       systemd-private-0886ccb76384493bbc69c4ba48766cb4-systemd-timesyncd.service-c83qlg
+  ```
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Cyber Security 101 (TRY-HACK-ME)
 
 <details>
-<summary>D </summary>
+<summary>Linux Fundamentals Part 2 - /var (variable folder - Application data) </summary>
 
   ```
 
