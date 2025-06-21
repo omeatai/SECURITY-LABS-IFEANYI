@@ -126,6 +126,35 @@
   ```
 
 </details>
+<details>
+<summary>Linux Fundamentals Part 1 - cat </summary>
+
+  ```
+  tryhackme@linux1:~/folder4$ ls
+  note.txt
+  tryhackme@linux1:~/folder4$ cat note.txt 
+  Hello World!
+
+  tryhackme@linux1:~$ ls
+  access.log  folder1  folder2  folder3  folder4
+  tryhackme@linux1:~$ cat folder4/note.txt
+  Hello World!
+  ```
+
+</details>
+<details>
+<summary>Linux Fundamentals Part 1 - pwd </summary>
+
+  ```
+  tryhackme@linux1:~$ ls
+  access.log  folder1  folder2  folder3  folder4
+
+  tryhackme@linux1:~$ cd folder4
+  tryhackme@linux1:~/folder4$ pwd
+  /home/tryhackme/folder4
+  ```
+
+</details>
 
 
 
