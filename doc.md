@@ -295,7 +295,12 @@
 <summary>Linux Fundamentals Part 2 - touch (Create file) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  myfile  myfolder  unknown1
+
+  tryhackme@linux2:~$ touch note.txt
+  tryhackme@linux2:~$ ls
+  important  myfile  myfolder  note.txt  unknown1
   ```
 
 </details>
@@ -304,7 +309,12 @@
 <summary>Linux Fundamentals Part 2 - mkdir (Create a folder) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  myfile  myfolder  note.txt  unknown1
+
+  tryhackme@linux2:~$ mkdir mydirectory
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  unknown1
   ```
 
 </details>
@@ -313,7 +323,12 @@
 <summary>Linux Fundamentals Part 2 - cp (Copy a file or folder) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  unknown1
+
+  tryhackme@linux2:~$ cp note.txt note2.txt
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  note2.txt  unknown1
   ```
 
 </details>
@@ -322,7 +337,23 @@
 <summary>Linux Fundamentals Part 2 - mv (Move a file or folder) </summary>
 
   ```
-  
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  note2.txt  unknown1
+
+  tryhackme@linux2:~$ mv note2.txt mydirectory/note2.txt
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  unknown1
+  tryhackme@linux2:~$ ls mydirectory/
+  note2.txt
+  ```
+
+  ```
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note.txt  unknown1
+
+  tryhackme@linux2:~$ mv note.txt note_updated.txt
+  tryhackme@linux2:~$ ls
+  important  mydirectory  myfile  myfolder  note_updated.txt  unknown1
   ```
 
 </details>
