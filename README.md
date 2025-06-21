@@ -1,6 +1,8 @@
 # SECURITY-LABS-IFEANYI
 by Ifeanyi Omeata
 
+- [ ] [Documentation](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/doc.md)
+
 ## Pre-Security (TRY-HACK-ME)
 
 - [ ] 1-Introduction to Cyber Security
