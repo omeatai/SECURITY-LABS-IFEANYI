@@ -222,6 +222,22 @@
 </details>
 
 
+<details>
+<summary>Linux Fundamentals Part 2 - ssh (login using Secure Shell) </summary>
+
+  ```
+  ssh tryhackme@10.10.185.226
+  ```
+
+</details>
+
+
+
+
+
+
+
+
 
 
 
