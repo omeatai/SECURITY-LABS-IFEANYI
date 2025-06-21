@@ -156,7 +156,7 @@
 
 </details>
 <details>
-<summary>Linux Fundamentals Part 1 - find </summary>
+<summary>Linux Fundamentals Part 1 - find (find file) </summary>
 
   ```
   tryhackme@linux1:~$ ls
