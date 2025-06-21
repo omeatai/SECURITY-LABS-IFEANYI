@@ -99,6 +99,25 @@
   ```
 
 </details>
+<summary>Linux Fundamentals Part 1 - Whoami </summary>
+
+  ```
+  tryhackme@linux1:~$ ls
+  ```
+
+  ```
+  access.log  folder1  folder2  folder3  folder4
+  ```
+
+  ```
+  tryhackme@linux1:~$ ls folder4
+  ```
+
+  ```
+  note.txt
+  ```
+
+</details>
 
 
 
