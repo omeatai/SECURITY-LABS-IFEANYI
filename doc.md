@@ -410,7 +410,7 @@
 </details>
 
 <details>
-<summary>Linux Fundamentals Part 2 - etc (etcetera folder) </summary>
+<summary>Linux Fundamentals Part 2 - etc (etcetera folder - system files) </summary>
 
   ```
   tryhackme@linux2:~$ cd /etc
