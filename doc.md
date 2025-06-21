@@ -99,6 +99,7 @@
   ```
 
 </details>
+<details>
 <summary>Linux Fundamentals Part 1 - Whoami </summary>
 
   ```
