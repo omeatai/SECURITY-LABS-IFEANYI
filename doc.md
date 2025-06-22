@@ -558,7 +558,39 @@
 
 </details>
 
+<details>
+<summary>Linux Fundamentals Part 3 - Processes </summary>
 
+  ```
+  tryhackme@linux3:~$ ps
+  PID TTY       TIME CMD
+  3540 pts/0    00:00:00 bash
+  3571 pts/0    00:00:00 ps
+  ```
+
+  ```
+  ps aux
+  ```
+
+  ```
+  top
+  ```
+
+  - [ ] Top gives real-time statistics about the processes running on your system
+
+  ```
+  kill 1337
+  ```
+
+  ```
+  systemctl start apache2
+  systemctl stop apache2
+  systemctl enable apache2
+  systemctl disable apache2
+  ```
+
+
+</details>
 
 
 
