@@ -529,24 +529,31 @@
   ## Using Python to start a web server
 
   ```
-  tryhackme@linux3:/webserver# python3 -m http.server
+  tryhackme@linux3:~$ ls
+  task3
+
+  tryhackme@linux3:~$ python3 -m http.server
   Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+  10.10.176.37 - - [22/Jun/2025 13:38:23] "GET /task3 HTTP/1.1" 200 -
   ```
 
   ## Downloading a file from our webserver using wget
 
   ```
-  tryhackme@linux3:/tmp# wget http://10.10.177.51:8000/file
-  
-  2021-05-04 14:26:16  http://127.0.0.1:8000/file
-  Connecting to http://127.0.0.1:8000... connected.
+  root@ip-10-10-176-37:~# ls
+  burp.json   Desktop    Instructions  Postman  Scripts  thinclient_drives
+  CTFBuilder  Downloads  Pictures      Rooms    snap     Tools
+
+  root@ip-10-10-176-37:~# wget http://10.10.58.204:8000/task3
+  --2025-06-22 14:38:25--  http://10.10.58.204:8000/task3
+  Connecting to 10.10.58.204:8000... connected.
   HTTP request sent, awaiting response... 200 OK
-  Length: 51095 (50K) [text]
-  Saving to: ‘file’
+  Length: 18 [application/octet-stream]
+  Saving to: \u2018task3\u2019
   
-  file                    100%[=================================================>]  49.90K  --.-KB/s    in 0.04s
+  task3               100%[===================>]      18  --.-KB/s    in 0s      
   
-  2021-05-04 14:26:16 (1.31 MB/s) - ‘file’ saved [51095/51095]
+  2025-06-22 14:38:25 (118 KB/s) - \u2018task3\u2019 saved [18/18]
   ```  
 
 </details>
