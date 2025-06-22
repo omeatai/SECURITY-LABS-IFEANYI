@@ -488,7 +488,7 @@
 </details>
 
 <details>
-<summary>Linux Fundamentals Part 3 - wget </summary>
+<summary>Linux Fundamentals Part 3 - wget (Download Files from linux HTTP Servers) </summary>
 
   ```
   wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
@@ -497,7 +497,7 @@
 </details>
 
 <details>
-<summary>Linux Fundamentals Part 3 - SCP/SSH </summary>
+<summary>Linux Fundamentals Part 3 - SCP/SSH (Transfer Files Remotely) </summary>
 
   ## let's copy an example file from our machine to a remote machine
 
@@ -522,6 +522,41 @@
   - [ ] Name that we wish to store the file as on our system =	notes.txt
 
 </details>
+
+<details>
+<summary>Linux Fundamentals Part 3 - HTTPServer with wget </summary>
+
+  ## Using Python to start a web server
+
+  ```
+  tryhackme@linux3:/webserver# python3 -m http.server
+  Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+  ```
+
+  ## Downloading a file from our webserver using wget
+
+  ```
+  tryhackme@linux3:/tmp# wget http://10.10.177.51:8000/file
+  
+  2021-05-04 14:26:16  http://127.0.0.1:8000/file
+  Connecting to http://127.0.0.1:8000... connected.
+  HTTP request sent, awaiting response... 200 OK
+  Length: 51095 (50K) [text]
+  Saving to: ‘file’
+  
+  file                    100%[=================================================>]  49.90K  --.-KB/s    in 0.04s
+  
+  2021-05-04 14:26:16 (1.31 MB/s) - ‘file’ saved [51095/51095]
+  ```  
+
+</details>
+
+
+
+
+
+
+
 
 
 
