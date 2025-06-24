@@ -561,36 +561,113 @@
 <details>
 <summary>Linux Fundamentals Part 3 - Processes </summary>
 
+  ## ps
+
+  - [ ] What it does: Shows your processes (by default, only those associated with the current terminal/session).
+  - [ ] Limited view: If you just run ps alone, it won’t show background daemons or other users’ processes.
+
   ```
   tryhackme@linux3:~$ ps
+
   PID TTY       TIME CMD
   3540 pts/0    00:00:00 bash
   3571 pts/0    00:00:00 ps
   ```
 
+  ## ps aux
+
+  - [ ] What it does: Shows all running processes on the system, regardless of who owns them or their terminal association.
+  - [ ] Comprehensive: Includes system daemons, root processes, and background tasks.
+  - [ ] Detailed info: Gives memory and CPU usage, user, PID, start time, command, and more.
+  - [ ] Breakdown of ps aux:
+    - [ ] a – Show processes for all users
+    - [ ] u – Display process owner/user
+    - [ ] x – Include processes not attached to a terminal
+
   ```
   ps aux
+
+  USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+  root         1  0.0  0.1 225200  9056 ?        Ss   Jun22   0:03 /sbin/init
+  yourname  5678  0.2  1.3 300000 50000 pts/0    Sl   20:20   0:05 firefox
   ```
+
+  ## Top
+
+  - [ ] Top gives real-time statistics about the processes running on your system
+  - [ ] What it does: Displays a real-time, dynamic list of processes sorted by CPU usage (by default).
+  - [ ] Use case: Monitor system performance, view resource usage, find processes to kill or investigate.
+  - [ ] Interactive: You can sort, search, and kill processes directly from the top interface.
+  - [ ] While inside top:
+    - [ ] Press k to kill a process (it will ask for a PID).
+    - [ ] Press q to quit.
+    - [ ] Press P to sort by CPU usage, M by memory.
 
   ```
   top
   ```
 
-  - [ ] Top gives real-time statistics about the processes running on your system
+  ## kill & pkill
+
+  - [ ] Syntax: kill [signal] PID
 
   ```
-  kill 1337
+  ps aux | grep firefox  # Find PID of Firefox
+  kill -9 12345          # Force-kill the Firefox process with PID 12345
   ```
+
+  - [ ] Syntax: pkill [options] pattern
+
+  ```
+  pkill firefox                   # Terminates all processes with the name 'firefox'
+  pkill -f "python my_script.py"  # Match full command line
+  pkill -u username processname   # Killing specific users' processes
+  ```
+
+  ## fg
+
+  - [ ] What it does: Brings a background job to the foreground in the terminal.
+  - [ ] Use case: Resume a paused or backgrounded process (like after pressing Ctrl+Z or running a job with &).
+  - [ ] Works only in the current shell session.
 
   ```
   fg
+
+  sleep 60 &
+  jobs           # Show background jobs
+  fg %1          # Brings job number 1 to the foreground
+  
+  python my_script.py
+  ^Z             # Ctrl+Z to suspend the process
+  bg             # Resume it in the background
+  fg             # Bring it back to foreground
   ```
 
+  # systemctl
+
+  - [ ] systemctl is the main command-line tool used to manage system services on Linux systems that use systemd (which most modern Linux distributions do, like Ubuntu, Fedora, CentOS, Debian, etc.).
+  - [ ] It interacts with the systemd init system and service manager, allowing you to:
+    - [ ] Start, stop, enable, or disable services
+    - [ ] Check service status
+    - [ ] Reboot or shut down the system
+    - [ ] Analyze boot performance
+    - [ ] List running services and units
+
   ```
-  systemctl start apache2
-  systemctl stop apache2
-  systemctl enable apache2
-  systemctl disable apache2
+  sudo systemctl status nginx	  = Check the status of the nginx service
+  sudo systemctl start nginx	  = Start the service now
+  sudo systemctl stop nginx	    = Stop the service
+  sudo systemctl restart nginx	= Restart the service
+  sudo systemctl enable nginx	  = Enable service to start at boot
+  sudo systemctl disable nginx	= Prevent service from starting at boot
+  sudo systemctl is-enabled nginx	= Check if it's set to start on boot
+  sudo systemctl is-active nginx	= Check if it’s currently running
+  sudo systemctl list-units --type=service = Show all active services
+  sudo systemctl daemon-reload	= Reload service files after editing systemd units
+  sudo systemctl reboot	  = Reboot the system
+  sudo systemctl poweroff	= Power down the system
+  sudo systemctl suspend	= Suspend (sleep) mode
+  sudo systemctl list-timers	= Show all active timers (scheduled tasks)
   ```
 
 
