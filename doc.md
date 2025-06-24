@@ -670,10 +670,40 @@
   sudo systemctl list-timers	= Show all active timers (scheduled tasks)
   ```
 
-
 </details>
 
+<details>
+<summary>Linux Fundamentals Part 3 - Cron Jobs </summary>
 
+  - [ ] To open & edit crontab:
+        
+  ```
+  crontab -e
+  ```
+  
+  - [ ] A crontab is simply a special file with formatting that is recognised by the cron process to execute each line step-by-step.
+  - [ ] Crontabs require 6 specific values:
+    - [ ] MIN	  = What minute to execute at
+    - [ ] HOUR	= What hour to execute at
+    - [ ] DOM	  = What day of the month to execute at
+    - [ ] MON	  = What month of the year to execute at
+    - [ ] DOW	  = What day of the week to execute at
+    - [ ] CMD	  = The actual command that will be executed.
+
+  ```
+  [MIN] [HOUR] [DOM] [MON] [DOW] {CMD....}
+  ```
+
+  ```
+  0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+  ```
+
+  ## Crontab Generators
+
+  - [ ] [Crontab Generator Online](https://crontab-generator.org/)
+  - [ ] [Cron Guru](https://crontab.guru/)
+
+</details>
 
 
 
@@ -697,7 +727,7 @@
 ## Cyber Security 101 (TRY-HACK-ME)
 
 <details>
-<summary>Linux Fundamentals Part 2 - /var (variable folder - Application data) </summary>
+<summary>Linux Fundamentals Part 3 - Processes </summary>
 
   ```
 
