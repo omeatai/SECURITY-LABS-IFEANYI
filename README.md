@@ -22,10 +22,10 @@ by Ifeanyi Omeata
   - [x] [Putting it all together](https://tryhackme.com/room/puttingitalltogether)
 - [ ] 4-Linux Fundamentals
   - [x] [Linux Fundamentals Part 1](https://tryhackme.com/room/linuxfundamentalspart1)
-  - [x] [Linux Fundamentals Part 2]()
-  - [ ] [Linux Fundamentals Part 3]()
+  - [x] [Linux Fundamentals Part 2](https://tryhackme.com/room/linuxfundamentalspart2)
+  - [x] [Linux Fundamentals Part 3](https://tryhackme.com/room/linuxfundamentalspart3)
 - [ ] 5-Windows Fundamentals
-  - [ ] [Windows Fundamentals Part 1]()
+  - [x] [Windows Fundamentals Part 1](https://tryhackme.com/room/windowsfundamentals1xbx)
   - [ ] [Windows Fundamentals Part 2]()
   - [ ] [Windows Fundamentals Part 3]()
 
