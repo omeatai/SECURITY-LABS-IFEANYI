@@ -3,7 +3,7 @@
 <details>
 <summary>Offensive Security Intro - Using Gobuster To Find Hidden Website Pages</summary>
 
-  ```
+  ```sh
   gobuster -u http://fakebank.thm -w wordlist.txt dir
   ```
   - [ ] -u is used to state the website we're scanning
@@ -13,7 +13,7 @@
 <details>
 <summary>DNS in Detail - CNAME of shop.website.thm </summary>
 
-  ```
+  ```sh
   $ nslookup --type=CNAME shop.website.thm
 
   Server: 127.0.0.53
@@ -27,7 +27,7 @@
 <details>
 <summary>DNS in Detail - TXT record of website.thm </summary>
 
-  ```
+  ```sh
   $ nslookup --type=TXT website.thm
 
   Server: 127.0.0.53
@@ -41,7 +41,7 @@
 <details>
 <summary>DNS in Detail - numerical priority value for the MX record </summary>
 
-  ```
+  ```sh
   $ nslookup --type=MX website.thm
 
   Server: 127.0.0.53
@@ -55,7 +55,7 @@
 <details>
 <summary>DNS in Detail - IP address for the A record of www.website.thm </summary>
 
-  ```
+  ```sh
   $ nslookup --type=A website.thm
 
   Server: 127.0.0.53
@@ -70,7 +70,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - echo </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ echo "Hello World"
 
   Hello World
@@ -80,7 +80,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - whoami (check username) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ whoami
 
   tryhackme
@@ -90,26 +90,26 @@
 <details>
 <summary>Linux Fundamentals Part 1 - ls (list files) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ ls
 
   access.log  folder1  folder2  folder3  folder4
   ```
 
-  ```
+  ```sh
   tryhackme@linux1:~$ ls folder4
 
   note.txt
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls -a
 
   .   .bash_logout  .cache    important  myfolder
   ..  .bashrc       .profile  myfile     unknown1
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls -l
   
   total 16
@@ -119,7 +119,7 @@
   -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls -lrt
   
   total 16
@@ -129,13 +129,13 @@
   -rw-r--r-- 1 tryhackme tryhackme   16 May  5  2021 myfile
   ```
 
-  ```
+  ```sh
   -l: Long listing format (shows details like permissions, owner, size, modification date)
   -r: Reverse order while sorting
   -t: Sort by modification time, newest files first
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls -la
   
   total 40
@@ -151,7 +151,7 @@
   -rw-r--r-- 1 tryhackme tryhackme   17 May  4  2021 unknown1
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls -lart
 
   total 40
@@ -167,7 +167,7 @@
   drwxr-xr-x 4 tryhackme tryhackme 4096 Jun 21 14:48 .
   ```
 
-  ```
+  ```sh
   ls --help
   man ls
   ```
@@ -176,7 +176,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - cd (change directory) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ ls
   access.log  folder1  folder2  folder3  folder4
 
@@ -189,7 +189,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - cat (show file data) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~/folder4$ ls
   note.txt
   tryhackme@linux1:~/folder4$ cat note.txt 
@@ -205,7 +205,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - pwd (print working directory) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ ls
   access.log  folder1  folder2  folder3  folder4
 
@@ -218,7 +218,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - find (find file) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ ls
   access.log  folder1  folder2  folder3  folder4
 
@@ -232,7 +232,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - wc (line entries) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~$ cd folder4
   tryhackme@linux1:~/folder4$ ls
   note.txt
@@ -247,7 +247,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - {echo >>} (Append contents to file) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~/folder4$ ls
   note.txt
 
@@ -267,7 +267,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - grep (search for contents in file) </summary>
 
-  ```
+  ```sh
   tryhackme@linux1:~/folder4$ ls
   note.txt
 
@@ -285,7 +285,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - ssh (login using Secure Shell) </summary>
 
-  ```
+  ```sh
   ssh tryhackme@10.10.185.226
   ```
 
@@ -294,7 +294,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - touch (Create file) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  myfile  myfolder  unknown1
 
@@ -308,7 +308,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - mkdir (Create a folder) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  myfile  myfolder  note.txt  unknown1
 
@@ -322,7 +322,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - cp (Copy a file or folder) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  mydirectory  myfile  myfolder  note.txt  unknown1
 
@@ -336,7 +336,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - mv (Move a file or folder) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  mydirectory  myfile  myfolder  note.txt  note2.txt  unknown1
 
@@ -347,7 +347,7 @@
   note2.txt
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  mydirectory  myfile  myfolder  note.txt  unknown1
 
@@ -361,7 +361,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - rm (Remove a file or folder) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  mydirectory  myfile  myfolder  note_updated.txt  unknown1
 
@@ -370,7 +370,7 @@
   important  mydirectory  myfile  myfolder  unknown1
   ```
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  mydirectory  myfile  myfolder  unknown1
 
@@ -384,7 +384,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - file (Determine the type of a file) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ ls
   important  myfile  myfolder  unknown1
 
@@ -397,7 +397,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - su (Switch between Users) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ su -l user2
   Password: 
   user2@linux2:~$
@@ -412,7 +412,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - etc (etcetera folder - system files) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:~$ cd /etc
   tryhackme@linux2:/etc$ ls
   
@@ -448,7 +448,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - /var (variable folder - Application data) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:/etc$ cd .. && cd /var
 
   tryhackme@linux2:/var$ ls
@@ -466,7 +466,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - /root (root folder - home directory for the "root" user) </summary>
 
-  ```
+  ```sh
   root@linux2:~# ls
   myfile myfolder passwords.xlsx
   ```
@@ -476,7 +476,7 @@
 <details>
 <summary>Linux Fundamentals Part 2 - /tmp (temporary folder - ram temporary data) </summary>
 
-  ```
+  ```sh
   tryhackme@linux2:/$ cd /tmp
 
   tryhackme@linux2:/tmp$ ls
@@ -490,7 +490,7 @@
 <details>
 <summary>Linux Fundamentals Part 3 - wget (Download Files from linux HTTP Servers) </summary>
 
-  ```
+  ```sh
   wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
   ```
 
@@ -501,7 +501,7 @@
 
   ## let's copy an example file from our machine to a remote machine
 
-  ```
+  ```sh
   scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
   ```
 
@@ -512,7 +512,7 @@
 
   ## let's copy a file from a remote computer to our local machine 
 
-  ```
+  ```sh
   scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt 
   ```
 
@@ -528,7 +528,7 @@
 
   ## Using Python to start a web server
 
-  ```
+  ```sh
   tryhackme@linux3:~$ ls
   task3
 
@@ -539,7 +539,7 @@
 
   ## Downloading a file from our webserver using wget
 
-  ```
+  ```sh
   root@ip-10-10-176-37:~# ls
   burp.json   Desktop    Instructions  Postman  Scripts  thinclient_drives
   CTFBuilder  Downloads  Pictures      Rooms    snap     Tools
@@ -566,7 +566,7 @@
   - [ ] What it does: Shows your processes (by default, only those associated with the current terminal/session).
   - [ ] Limited view: If you just run ps alone, it won’t show background daemons or other users’ processes.
 
-  ```
+  ```sh
   tryhackme@linux3:~$ ps
 
   PID TTY       TIME CMD
@@ -584,7 +584,7 @@
     - [ ] u – Display process owner/user
     - [ ] x – Include processes not attached to a terminal
 
-  ```
+  ```sh
   ps aux
 
   USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
@@ -603,7 +603,7 @@
     - [ ] Press q to quit.
     - [ ] Press P to sort by CPU usage, M by memory.
 
-  ```
+  ```sh
   top
   ```
 
@@ -611,14 +611,14 @@
 
   - [ ] Syntax: kill [signal] PID
 
-  ```
+  ```sh
   ps aux | grep firefox  # Find PID of Firefox
   kill -9 12345          # Force-kill the Firefox process with PID 12345
   ```
 
   - [ ] Syntax: pkill [options] pattern
 
-  ```
+  ```sh
   pkill firefox                   # Terminates all processes with the name 'firefox'
   pkill -f "python my_script.py"  # Match full command line
   pkill -u username processname   # Killing specific users' processes
@@ -630,7 +630,7 @@
   - [ ] Use case: Resume a paused or backgrounded process (like after pressing Ctrl+Z or running a job with &).
   - [ ] Works only in the current shell session.
 
-  ```
+  ```sh
   fg
 
   sleep 60 &
@@ -653,7 +653,7 @@
     - [ ] Analyze boot performance
     - [ ] List running services and units
 
-  ```
+  ```sh
   sudo systemctl status nginx	  = Check the status of the nginx service
   sudo systemctl start nginx	  = Start the service now
   sudo systemctl stop nginx	    = Stop the service
@@ -677,7 +677,7 @@
 
   - [ ] To open & edit crontab:
         
-  ```
+  ```sh
   crontab -e
   ```
   
@@ -690,11 +690,11 @@
     - [ ] DOW	  = What day of the week to execute at
     - [ ] CMD	  = The actual command that will be executed.
 
-  ```
+  ```sh
   [MIN] [HOUR] [DOM] [MON] [DOW] {CMD....}
   ```
 
-  ```
+  ```sh
   0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
   ```
 
@@ -708,7 +708,7 @@
 <details>
 <summary>Windows Fundamentals Part 1 - Windows User Manager </summary>
 
-  ```
+  ```sh
   lusrmgr.msc
   ```
 
@@ -719,7 +719,7 @@
 <details>
 <summary>Windows Fundamentals Part 2 - System Configuration utility (MSConfig) </summary>
 
-  ```
+  ```sh
   msconfig
   ```
 
