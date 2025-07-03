@@ -706,10 +706,21 @@
 </details>
 
 <details>
-<summary>Windows Fundamentals Part 1 - Processes </summary>
+<summary>Windows Fundamentals Part 1 - Windows User Manager </summary>
 
   ```
+  lusrmgr.msc
+  ```
 
+  <img width="1680" alt="image" src="https://github.com/user-attachments/assets/b674f133-797e-4032-a3f9-7330cd7c3a2d" />
+
+</details>
+
+<details>
+<summary>Windows Fundamentals Part 2 - System Configuration utility (MSConfig) </summary>
+
+  ```
+  msconfig
   ```
 
   ```
@@ -717,7 +728,6 @@
   ```
 
 </details>
-
 
 
 
