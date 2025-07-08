@@ -717,7 +717,9 @@
 </details>
 
 <details>
-<summary>Windows Fundamentals Part 2 - System Configuration utility (MSConfig) </summary>
+<summary>Windows Fundamentals Part 2 - Windows Utilities</summary>
+  
+  ### System Configuration utility 
 
   ```sh
   msconfig
@@ -725,9 +727,22 @@
 
   <img width="664" alt="image" src="https://github.com/user-attachments/assets/e6d95d50-75e9-4938-ace8-fa7eceae394a" />
 
+  ### Performance Monitor 
+  
+  ```sh
+  perfmon
   ```
 
+  <img width="840" alt="image" src="https://github.com/user-attachments/assets/fa2d7f89-7b31-4f7e-ac4c-4b45c1e01984" />
+
+  ### Computer Management
+  
+  ```sh
+  compmgmt
   ```
+
+  <img width="837" alt="image" src="https://github.com/user-attachments/assets/5bd492b8-46c2-410e-993c-5f48cbed29af" />
+
 
 </details>
 
