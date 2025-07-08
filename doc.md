@@ -759,6 +759,13 @@
 
   <img width="811" alt="image" src="https://github.com/user-attachments/assets/df2166a6-17c2-4ac6-8b47-52052ea92f7e" />
 
+  ### Registry Editor
+  
+  ```sh
+  regedit
+  ```
+
+  <img width="633" alt="image" src="https://github.com/user-attachments/assets/58ff5b33-42da-408a-af04-dd5f7dc92f65" />
 
 </details>
 
