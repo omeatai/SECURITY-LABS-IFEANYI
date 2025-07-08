@@ -27,7 +27,7 @@ by Ifeanyi Omeata
 - [ ] 5-Windows Fundamentals
   - [x] [Windows Fundamentals Part 1](https://tryhackme.com/room/windowsfundamentals1xbx)
   - [x] [Windows Fundamentals Part 2](https://tryhackme.com/room/windowsfundamentals2x0x)
-  - [ ] [Windows Fundamentals Part 3]()
+  - [x] [Windows Fundamentals Part 3](https://tryhackme.com/room/windowsfundamentals3xzx)
 
 ## Cyber Security 101 (TRY-HACK-ME)
 
