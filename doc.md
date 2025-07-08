@@ -743,6 +743,22 @@
 
   <img width="837" alt="image" src="https://github.com/user-attachments/assets/5bd492b8-46c2-410e-993c-5f48cbed29af" />
 
+  ### System Information
+  
+  ```sh
+  msinfo32
+  ```
+
+  <img width="761" alt="image" src="https://github.com/user-attachments/assets/00f0d5fd-c241-49f5-8c5f-6264fae0b7b5" />
+
+  ### Resource Monitor
+  
+  ```sh
+  resmon
+  ```
+
+  <img width="811" alt="image" src="https://github.com/user-attachments/assets/df2166a6-17c2-4ac6-8b47-52052ea92f7e" />
+
 
 </details>
 
