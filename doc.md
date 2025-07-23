@@ -13,7 +13,7 @@
 <details>
 <summary>DNS in Detail </summary>
 
-  ## CNAME of shop.website.thm
+  #### CNAME of shop.website.thm
 
   ```sh
   $ nslookup --type=CNAME shop.website.thm
