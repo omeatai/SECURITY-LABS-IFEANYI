@@ -12,7 +12,7 @@
 </details>
 
 <details>
-<summary>DNS in Detail </summary>
+<summary>DNS in Detail -  CNAME, TXT, Numerical priority value, IP address for the A record  </summary>
 
   #### CNAME of shop.website.thm
 
