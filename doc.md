@@ -11,16 +11,12 @@
 
 </details>
 <details>
-<summary>DNS in Detail - CNAME of shop.website.thm </summary>
+<summary>DNS in Detail </summary>
+
+  ## CNAME of shop.website.thm
 
   ```sh
   $ nslookup --type=CNAME shop.website.thm
-
-  Server: 127.0.0.53
-  Address: 127.0.0.53#53
-  
-  Non-authoritative answer:
-  shop.website.thm canonical name = shops.myshopify.com
   ```
 
 </details>
@@ -29,12 +25,6 @@
 
   ```sh
   $ nslookup --type=TXT website.thm
-
-  Server: 127.0.0.53
-  Address: 127.0.0.53#53
-  
-  Non-authoritative answer:
-  website.thm text = "THM{7012BBA60997F35A9516C2E16D2944FF}"
   ```
 
 </details>
