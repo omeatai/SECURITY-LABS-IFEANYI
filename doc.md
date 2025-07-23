@@ -14,7 +14,7 @@
 <details>
 <summary>DNS in Detail -  CNAME, TXT, Numerical priority value, IP address for the A record  </summary>
 
-  #### CNAME of shop.website.thm
+  ## CNAME of shop.website.thm
 
   ```sh
   $ nslookup --type=CNAME shop.website.thm
@@ -26,7 +26,7 @@
   shop.website.thm canonical name = shops.myshopify.com
   ```
 
-  #### TXT record of website.thm
+  ## TXT record of website.thm
 
   ```sh
   $ nslookup --type=TXT website.thm
@@ -38,7 +38,7 @@
   website.thm text = "THM{7012BBA60997F35A9516C2E16D2944FF}"
   ```
 
-  #### Numerical priority value for the MX record
+  ## Numerical priority value for the MX record
 
   ```sh
   $ nslookup --type=MX website.thm
@@ -50,7 +50,7 @@
   website.thm mail exchanger = 30 alt4.aspmx.l.google.com
   ```
 
-  #### IP address for the A record of www.website.thm
+  ## IP address for the A record of www.website.thm
 
   ```sh
   $ nslookup --type=A website.thm
