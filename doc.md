@@ -68,7 +68,7 @@
 <details>
 <summary>Linux Fundamentals Part 1 - echo, whoami </summary>
 
-  #### echo
+  ## echo
   
   ```sh
   tryhackme@linux1:~$ echo "Hello World"
