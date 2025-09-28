@@ -769,6 +769,14 @@
 
 </details>
 
+<details>
+<summary>Windows Fundamentals Part 3 - Get Windows Updates </summary>
+
+  ```
+  control /name Microsoft.WindowsUpdate
+  ```
+
+</details>
 
 
 
