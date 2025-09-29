@@ -100,21 +100,49 @@ by Ifeanyi Omeata
   - [ ] [Training Impact on Teams]()
 
 
+## Jr Penetration Tester
 
-
-
-
-
-
-## C
-
+- [ ] 1-Introduction to Cyber Security
+  - [ ] [Offensive Security Intro]()
+  - [ ] [Defensive Security Intro]()
+  - [ ] [Careers in Cyber]()
+- [ ] 2-Introduction to Pentesting
+  - [ ] [Pentesting Fundamentals]()
+  - [ ] [Principles of Security]()
+- [ ] 3-Introduction to Web Hacking
+  - [ ] [Walking An Application]()
+  - [ ] [Content Discovery]()
+  - [ ] [Subdomain Enumeration]()
+  - [ ] [Authentication Bypass]()
+  - [ ] [IDOR]()
+  - [ ] [File Inclusion]()
+  - [ ] [Intro to SSRF]()
+  - [ ] [Intro to Cross-site Scripting]()
+  - [ ] [Race Conditions]()
+  - [ ] [Command Injection]()
+  - [ ] [SQL Injection]()
+- [ ] 4-Burp Suite
+  - [ ] [Burp Suite: The Basics]()
+  - [ ] [Burp Suite: Repeater]()
+  - [ ] [Burp Suite: Intruder]()
+  - [ ] [Burp Suite: Other Modules]()
+  - [ ] [Burp Suite: Extensions]()    
+- [ ] 5-Network Security
+  - [ ] [Passive Reconnaissance]()
+  - [ ] [Active Reconnaissance]()
+  - [ ] [Nmap Live Host Discovery]()
+  - [ ] [Nmap Basic Port Scans]()
+  - [ ] [Nmap Advanced Port Scans]()
+  - [ ] [Nmap Post Port Scans]()
+  - [ ] [Protocols and Servers]()
+  - [ ] [Passive Reconnaissance]()
+  - [ ] [Passive Reconnaissance]()
+- [ ] 2-Linux Fundamentals
+  - [ ] [Linux Fundamentals Part 1]()
 - [ ] 1-Start Your Cyber Security Journey
   - [ ] [Offensive Security Intro]()
 - [ ] 2-Linux Fundamentals
   - [ ] [Linux Fundamentals Part 1]()
-     
-
-
 
 
 
