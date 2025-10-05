@@ -2,9 +2,9 @@
 
 ### TRYHACKME
 
-- [x] [Pre Security](https://tryhackme.com/path/outline/presecurity) | [Note](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
-- [x] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101) | [Note](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/2.md)
-- [x] [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester) | [Note](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/3.md)
+- [x] [Pre Security](https://tryhackme.com/path/outline/presecurity) | [Notes](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
+- [x] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101) | [Notes](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/2.md)
+- [x] [Jr Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester) | [Notes](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/3.md)
 - [ ] [SOC Level 1](https://tryhackme.com/path/outline/soclevel1)
 - [ ] [SOC Level 2](https://tryhackme.com/path/outline/soclevel2)
 - [ ] [Web Fundamentals](https://tryhackme.com/path/outline/web)
