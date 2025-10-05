@@ -2,7 +2,7 @@
 
 ### TRYHACKME
 
-- [ ] [Pre Security](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
+- [x] [Pre Security](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
 - [ ] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 - [ ] [SOC Level 1](https://tryhackme.com/path/outline/soclevel1)
 - [ ] [SOC Level 2](https://tryhackme.com/path/outline/soclevel2)
