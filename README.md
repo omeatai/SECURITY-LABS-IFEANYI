@@ -1,12 +1,8 @@
 # SECURITY-LABS-IFEANYI by Ifeanyi Omeata
 
-## #LABS
-
-### [1 - Pre Security - TryHackMe](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
-
 ### TRYHACKME
 
-- [ ] [Pre Security](https://tryhackme.com/path/outline/presecurity)
+- [ ] [Pre Security](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
 - [ ] [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101)
 - [ ] [SOC Level 1](https://tryhackme.com/path/outline/soclevel1)
 - [ ] [SOC Level 2](https://tryhackme.com/path/outline/soclevel2)
