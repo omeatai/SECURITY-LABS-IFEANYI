@@ -2,8 +2,8 @@
 
 ### ONLINE
 
-- [x] [TRYHACKME.COM](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
-- [x] [LETSDEFEND.IO](https://app.letsdefend.io/path/cybersecurity-for-students)
+- [x] [TRYHACKME.COM](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/tryhackme.md)
+- [x] [LETSDEFEND.IO](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/letsdefend.md)
 
 ### ETHICAL HACKING
 
