@@ -27,6 +27,18 @@
   - [x] [Linux CLI Basics](https://tryhackme.com/room/linuxclibasics)
   - [x] [Windows CLI Basics](https://tryhackme.com/room/windowsclibasics)
   - [x] [Operating System Security](https://tryhackme.com/room/operatingsystemsecurity)
+- [x] 6-Software Basics
+  - [x] [Data Representation](https://tryhackme.com/room/datarepresentation)
+  - [x] [Data Encoding](https://tryhackme.com/room/dataencoding)
+  - [x] [Python: Simple Demo](https://tryhackme.com/room/pythonsimpledemo)
+  - [x] [JavaScript: Simple Demo](https://tryhackme.com/room/javascriptsimpledemo)
+  - [x] [Database SQL Basics](https://tryhackme.com/room/databasesqlbasics)
+- [x] 7-Attacks and Defenses
+  - [x] [The CIA Triad](https://tryhackme.com/room/theciatriad)
+  - [x] [Cryptography Concepts](https://tryhackme.com/room/cryptographyconcepts)
+  - [x] [Become a Hacker](https://tryhackme.com/room/becomeahacker)
+  - [x] [Become a Defender](https://tryhackme.com/room/becomeadefender)
+
 
 # [Cyber Security 101](https://tryhackme.com/paths)
 
