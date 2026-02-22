@@ -15,14 +15,18 @@
   - [x] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
   - [x] [How Websites Work](https://tryhackme.com/room/howwebsiteswork)
   - [x] [Putting it all together](https://tryhackme.com/room/puttingitalltogether)
-- [x] 4-Linux Fundamentals
-  - [x] [Linux Fundamentals Part 1](#)
-  - [x] [Linux Fundamentals Part 2](#)
-  - [x] [Linux Fundamentals Part 3](#)
-- [x] 5-Windows Fundamentals
-  - [x] [Windows Fundamentals Part 1](#)
-  - [x] [Windows Fundamentals Part 2](#)
-  - [x] [Windows Fundamentals Part 3](#)
+- [x] 4-Computer Fundamentals
+  - [x] [Inside a Computer System](https://tryhackme.com/room/insideacomputer)
+  - [x] [Computer Types](https://tryhackme.com/room/computertypes)
+  - [x] [Client-Server Basics](https://tryhackme.com/room/clientserverbasics)
+  - [x] [Virtualisation Basics](https://tryhackme.com/room/virtualisationbasics)
+  - [x] [Cloud Computing Fundamentals](https://tryhackme.com/room/cloudcomputingfundamentals)
+- [x] 5-Operating Systems Basics
+  - [x] [Operating Systems: Introduction](https://tryhackme.com/room/operatingsystemsintroduction)
+  - [x] [Windows Basics](https://tryhackme.com/room/windowsbasics)
+  - [x] [Linux CLI Basics](https://tryhackme.com/room/linuxclibasics)
+  - [x] [Windows CLI Basics](https://tryhackme.com/room/windowsclibasics)
+  - [x] [Operating System Security](https://tryhackme.com/room/operatingsystemsecurity)
 
 # [Cyber Security 101](https://tryhackme.com/paths)
 
