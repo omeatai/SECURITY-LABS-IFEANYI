@@ -1,6 +1,32 @@
 # [Pre Security](https://tryhackme.com/paths)
 
 - [x] 1-Introduction to Cyber Security
+  - [x] [Offensive Security Intro](https://tryhackme.com/room/offensivesecurityintro)
+  - [x] [Defensive Security Intro](https://tryhackme.com/room/defensivesecurityintro)
+  - [x] [Careers in Cyber Security](https://tryhackme.com/room/careersincyber)
+- [x] 2-Network Fundamentals
+  - [x] [What is Networking?](https://tryhackme.com/room/whatisnetworking)
+  - [x] [Intro to LAN](https://tryhackme.com/room/introtolan)
+  - [x] [OSI Model](https://tryhackme.com/room/osimodelzi)
+  - [x] [Packets & Frames](https://tryhackme.com/room/packetsframes)
+  - [x] [Extending Your Network](https://tryhackme.com/room/extendingyournetwork)
+- [x] 3-How The Web Works
+  - [x] [DNS in Detail](https://tryhackme.com/room/dnsindetail)
+  - [x] [HTTP in Detail](https://tryhackme.com/room/httpindetail)
+  - [x] [How Websites Work](https://tryhackme.com/room/howwebsiteswork)
+  - [x] [Putting it all together](https://tryhackme.com/room/puttingitalltogether)
+- [x] 4-Linux Fundamentals
+  - [x] [Linux Fundamentals Part 1](#)
+  - [x] [Linux Fundamentals Part 2](#)
+  - [x] [Linux Fundamentals Part 3](#)
+- [x] 5-Windows Fundamentals
+  - [x] [Windows Fundamentals Part 1](#)
+  - [x] [Windows Fundamentals Part 2](#)
+  - [x] [Windows Fundamentals Part 3](#)
+
+# [Cyber Security 101](https://tryhackme.com/paths)
+
+- [x] 1-Introduction to Cyber Security
   - [x] [Offensive Security Intro](#)
   - [x] [Defensive Security Intro](#)
   - [x] [Careers in Cyber Security](#)
@@ -23,5 +49,3 @@
   - [x] [Windows Fundamentals Part 1](#)
   - [x] [Windows Fundamentals Part 2](#)
   - [x] [Windows Fundamentals Part 3](#)
-
-# [Cyber Security 101](https://tryhackme.com/paths)
