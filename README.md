@@ -1,34 +1,9 @@
 # SECURITY-LABS-IFEANYI by Ifeanyi Omeata
 
-### TRYHACKME
+### ONLINE
 
-- [x] [Pre Security](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
-- [x] [Cyber Security 101](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/2.md)
-- [x] [Jr Penetration Tester](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/3.md)
-- [ ] [SOC Level 1](https://tryhackme.com/path/outline/soclevel1)
-- [ ] [SOC Level 2](https://tryhackme.com/path/outline/soclevel2)
-- [ ] [Web Fundamentals](https://tryhackme.com/path/outline/web)
-- [ ] [Web Application Pentesting](https://tryhackme.com/path/outline/webapppentesting)
-- [ ] [Red Teaming](https://tryhackme.com/path/outline/redteaming)
-- [ ] [Security Engineer](https://tryhackme.com/path/outline/security-engineer-training)
-- [ ] [DevSecOps](https://tryhackme.com/path/outline/devsecops)
-- [ ] [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
-
-### LETSENCRYPT
-
-- [ ] [Cybersecurity for Students](https://app.letsdefend.io/path/cybersecurity-for-students)
-- [ ] [Career Switch to Cybersecurity](https://app.letsdefend.io/path/career-switch-to-cybersecurity)
-- [ ] [CompTIA CySA+ Preparation Path](https://app.letsdefend.io/path/comptia-cysa-preparation-path)
-- [ ] [Google Cybersecurity Certificate Preparation Path](https://app.letsdefend.io/path/google-cybersecurity-certificate-preparation)
-- [ ] [SOC Analyst Learning Path](https://app.letsdefend.io/path/soc-analyst-learning-path)
-- [ ] [SIEM Engineer Career Path](https://app.letsdefend.io/path/siem-engineer-career-path)
-- [ ] [Incident Responder Path](https://app.letsdefend.io/path/incident-responder-path)
-- [ ] [DFIR Learning Path](https://app.letsdefend.io/path/dfir-learning-path)
-- [ ] [Detection Engineering Path](https://app.letsdefend.io/path/detection-engineering-path)
-- [ ] [Malware Analysis Skill Path](https://app.letsdefend.io/path/malware-analysis-skill-path)
-- [ ] [Information Security Specialist Career Path](http://app.letsdefend.io/path/information-security-specialist-career-path)
-- [ ] [AWS Security Learning Path](https://app.letsdefend.io/path/aws-security-learning-path)
-- [ ] [Programming for Cybersecurity](https://app.letsdefend.io/path/programming-for-cybersecurity)
+- [x] [TRYHACKME.COM](https://github.com/omeatai/SECURITY-LABS-IFEANYI/blob/main/labs/1.md)
+- [x] [LETSDEFEND.IO](https://app.letsdefend.io/path/cybersecurity-for-students)
 
 ### ETHICAL HACKING
 
@@ -51,5 +26,3 @@
 - [ ] [Free Splunk Tutorial - Splunk Basics Course](https://www.udemy.com/course/splunk-basics-course/)
 - [ ] [Free Splunk Tutorial - _NEW_ A No-Nonsense Splunk Course | Getting Started Guide](https://www.udemy.com/course/no-nonsense-course-on-using-splunk/)
 - [ ] [Google Cybersecurity](https://www.coursera.org/professional-certificates/google-cybersecurity#courses)
-
-
