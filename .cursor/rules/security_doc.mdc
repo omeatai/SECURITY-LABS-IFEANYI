@@ -1,16 +1,16 @@
 ---
-description: Format and append cybersecurity lab notes from rough.md to tryhackme_course.md
+description: Format and append cybersecurity lab notes from rough.md to tryhackme.md
 alwaysApply: false
 ---
 
 # Security Labs Documentation Rule
 
-When the user says **"apply the new documentation rule file"** (or similar, e.g. "apply security_doc.mdc to tryhackme_course.md"), perform the documentation workflow below.
+When the user says **"apply the new documentation rule file"** (or similar, e.g. "apply security_doc.mdc to tryhackme.md"), perform the documentation workflow below.
 
 ## Workflow Steps
 
 1. **Read** `rough.md` for the raw content.
-2. **Read** `format.md` as the template structure.
+2. **Read** `format.md` and `old.md` for the template structure.
 3. **Analyze** the rough content and map it to the format structure:
    - Introduction
    - Detailed Explanation (with `- [x]` checkboxes and sub-items)
@@ -20,7 +20,7 @@ When the user says **"apply the new documentation rule file"** (or similar, e.g.
    - Summary
    - References
 4. **Generate** 10–20 revision Q&A from the content to aid study.
-5. **Append** (do not overwrite) the formatted content to `tryhackme_course.md` even if the formatted content currently exists in tryhackme_course.md.
+5. **Append** (do not overwrite) the formatted content to `tryhackme.md` even if the formatted content currently exists in tryhackme.md.
 
 ## Format Requirements
 
@@ -43,8 +43,8 @@ When the user says **"apply the new documentation rule file"** (or similar, e.g.
 
 ## File Paths
 
-| Purpose                | Path                  |
-| ---------------------- | --------------------- |
-| Input (raw paste)      | `rough.md`            |
-| Template               | `format.md`           |
-| Output (append target) | `tryhackme_course.md` |
+| Purpose                | Path           |
+| ---------------------- | -------------- |
+| Input (raw paste)      | `rough.md`     |
+| Template               | `format.md`    |
+| Output (append target) | `tryhackme.md` |
