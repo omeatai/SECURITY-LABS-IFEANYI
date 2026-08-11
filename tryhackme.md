@@ -764,3 +764,6 @@ Careers in Cyber explains why security work is high-pay, exciting, and in demand
 - [Careers in Cyber – TryHackMe](https://tryhackme.com/room/careersincyber)
 
 </details>
+
+## 2-Computer Funamentals
+
