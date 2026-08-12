@@ -1044,7 +1044,7 @@ Inside a Computer System covers the core PC building blocks—motherboard, CPU, 
 </details>
 
 <details>
-  <summary>Inside a Computer System</summary>
+  <summary>Computer Types</summary>
 
 ## Introduction
 
@@ -1317,6 +1317,6 @@ Through Sophia’s Nova Labs internship, this room maps eight computer types—l
 
 ## References
 
-- [Inside a Computer System – TryHackMe](https://tryhackme.com/room/insideacomputer)
+- [Computer Types – TryHackMe](https://tryhackme.com/room/computertypes)
 
 </details>
