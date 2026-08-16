@@ -1,67 +1,85 @@
 <details>
-  <summary>[Title or Topic which will be a header1 or start with # in the rough.md file]</summary>
+  <summary>Example room title</summary>
 
 ## Introduction
 
+Short intro for the room. Opening this section should show Introduction, Detailed Explanation, four closed child accordions, then Summary and References.
+
 ## Detailed Explanation
 
-[Breakdown of content into check boxes]
+- [x] **Key idea**
+  - Supporting detail
+  - Another supporting detail
 
-- [x] Detail 1
-- [x] Detail 2
-  - sub-Detail 2.1
-  - sub-Detail 2.2
-- [x] Detail 3
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only.
+
+### **Overview**
+
+- [ ] Review the notes; there is no machine or View Site walkthrough here.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
 
 ## Terminal Commands
 
-[terminal commands with explanations and usage]
-
 ```bash
-
+# No commands in this topic.
 ```
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
-[Code in code blocks, if any with explanations]
-
-```py
-
+```text
+# No code snippets in this topic.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
-[10-20 Questions and answers from the content to aid revision]
+### Question 1: What is the example topic about?
 
-### Question 1: What are the 7 key levels of the OSI Model?
+<details>
+<summary>Answer</summary>
 
-  <details>
-  <summary>Answer</summary>
+- [x] A compact sample of the security accordion, with Lab, Terminal Commands, Code, and Q&A hidden in **child** accordions.
 
-  - [x] Physical
-  - [x] Data Link
-  - [x] Network
-  - [x] (…continue as needed)
+</details>
 
-  </details>
-  ### Question 2: Name the main parts of a URL discussed in the room.
+### Question 2: Which headings stay visible when you open a topic?
 
-  <details>
-  <summary>Answer</summary>
+<details>
+<summary>Answer</summary>
 
-  - [x] **Scheme** — protocol to use (e.g. HTTP, HTTPS)
-  - [x] **Host** — domain or IP
-  - [x] **Path** — resource location
-  - [x] (…other parts as applicable)
+- [x] **Introduction**
+- [x] **Detailed Explanation**
+- [x] **Summary**
+- [x] **References**
 
-  </details>
+</details>
+
+</details>
 
 ## Summary
 
-[Summary of Content]
+The topic accordion holds the notes. Lab, commands, code, and revision Q&A live in inner child accordions.
 
 ## References
 
-[Include all references with external links. The first reference should be the tryhackme page link which i would paste at the top of the rough.md file]
+- [Example source room](https://tryhackme.com/room/example)
 
 </details>

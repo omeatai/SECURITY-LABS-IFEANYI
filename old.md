@@ -42,6 +42,51 @@ In this TryHackMe lesson, you are guided through hacking your first website in a
   - Break topics down, focus on an area you like, and practice regularly (e.g. daily on TryHackMe)
   - Example offensive roles: Penetration Tester (find exploitable vulnerabilities), Red Teamer (simulate adversary), Security Engineer (design and maintain security controls)
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is the room's **FakeBank** walkthrough on the TryHackMe virtual desktop. Work only in that lab.
+
+### **Overview**
+
+- [ ] Practice offensive security against **FakeBank** in a legal lab.
+- [ ] You will:
+  - [ ] Start the machine and open a terminal.
+  - [ ] Use **Gobuster** to find hidden pages.
+  - [ ] Open `/bank-transfer` and complete the simulated transfer.
+- [ ] Success: $2000 moved from account **2276** to **8881** and the account page shows the new balance.
+
+### **Task 1: Start the lab**
+
+- [ ] Click **Start Machine** (or **Show Split View** if needed).
+- [ ] Open the **Terminal** from the Terminal icon.
+
+### **Task 2: Discover hidden pages**
+
+- [ ] Run Gobuster in directory mode:
+
+```bash
+gobuster -u http://fakebank.thm -w wordlist.txt dir
+```
+
+- [ ] Treat **Status 200** as a page that exists.
+- [ ] Confirm `/bank-transfer` is discovered (and `/images` as a 301).
+
+### **Task 3: Complete the transfer**
+
+- [ ] Visit `/bank-transfer` in the lab browser.
+- [ ] Transfer **$2000** from account **2276** to **8881**.
+- [ ] Refresh the account page if needed and confirm the updated balance.
+
+Successfully completed the FakeBank transfer in the authorized lab.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 Gobuster is used to discover hidden directories and pages on a target website. `-u` sets the target URL and `-w` specifies the wordlist; `dir` runs directory/file brute-force mode.
@@ -70,9 +115,19 @@ Gobuster v2.0.1              OJ Reeves (@TheColonial)
 
 Status 200 indicates a page that exists and was successfully accessed. Use discovered paths (e.g. `/bank-transfer`) in the browser to continue the exercise.
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No code sections in this room; the activity uses terminal commands (Gobuster) and the web interface only.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -82,6 +137,148 @@ No code sections in this room; the activity uses terminal commands (Gobuster) an
 <summary>Answer</summary>
 
 - [x] Offensive Security.
+
+</details>
+
+### Question 2: What is the main goal of offensive security?
+
+<details>
+<summary>Answer</summary>
+
+- [x] To understand hacker tactics and enhance system defences by finding and exploiting vulnerabilities in a controlled way.
+
+</details>
+
+### Question 3: What role do Virtual Machines play in this TryHackMe room?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They provide simulated environments that complement the lesson so you can practice hacking (e.g. FakeBank) in a legal, safe setting.
+
+</details>
+
+### Question 4: What is Gobuster used for in this room?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Gobuster is a command-line tool used to brute-force a website for hidden directories and pages by trying words from a wordlist against the target URL.
+
+</details>
+
+### Question 5: What do the flags `-u` and `-w` mean in the Gobuster command?
+
+<details>
+<summary>Answer</summary>
+
+- [x] `-u` specifies the target website URL to scan
+- [x] `-w` specifies the path to the wordlist file used for brute-forcing directory/page names.
+
+</details>
+
+### Question 6: What does Status 200 in Gobuster output indicate?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The page or directory exists and returned a successful HTTP response (OK), so it is a valid, reachable path on the target.
+
+</details>
+
+### Question 7: Why might hidden pages like admin or bank-transfer be dangerous if left exposed?
+
+<details>
+<summary>Answer</summary>
+
+- [x] They can give attackers access to sensitive functions (e.g. admin controls or money transfers) due to human error or negligence in access control.
+
+</details>
+
+### Question 8: What is the hidden page you are directed to find and use in the FakeBank task?
+
+<details>
+<summary>Answer</summary>
+
+- [x] The secret bank transfer page: `/bank-transfer`.
+
+</details>
+
+### Question 9: In the room task, which accounts are involved in the transfer?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Transfer $2000 from account 2276 to your account (account number 8881).
+
+</details>
+
+### Question 10: How should an ethical hacker use a vulnerability like an exposed bank-transfer page?
+
+<details>
+<summary>Answer</summary>
+
+- [x] With permission, find the vulnerability, demonstrate impact, and report it to the organisation (e.g. the bank) so they can fix it before a malicious hacker exploits it.
+
+</details>
+
+### Question 11: What is a Penetration Tester's main responsibility?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Testing technology products to find exploitable security vulnerabilities.
+
+</details>
+
+### Question 12: How does a Red Teamer differ from a typical penetration tester?
+
+<details>
+<summary>Answer</summary>
+
+- [x] A Red Teamer acts as an adversary, attacking the organisation and providing feedback from an attacker’s perspective, often in broader, more realistic scenarios.
+
+</details>
+
+### Question 13: What does a Security Engineer typically focus on?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Designing, monitoring, and maintaining security controls, networks, and systems to help prevent cyberattacks.
+
+</details>
+
+### Question 14: What is the recommended way to start learning cybersecurity on TryHackMe?
+
+<details>
+<summary>Answer</summary>
+
+- [x] Break topics down, choose an area of interest, and practice regularly with hands-on exercises—for example, building a habit of learning a little each day on TryHackMe.
+
+</details>
+
+### Question 15: Where do you confirm that your FakeBank transfer succeeded?
+
+<details>
+<summary>Answer</summary>
+
+- [x] On your account page; refresh the page if needed to see the updated balance.
+
+</details>
+
+</details>
+
+## Summary
+
+Offensive Security is about thinking like an attacker to find and fix weaknesses. This room introduces the idea by having you use Gobuster to find a hidden bank-transfer page on FakeBank, then perform a simulated transfer. You use the terminal (Gobuster with `-u` and `-w`), interpret results (e.g. Status 200), and complete the task in the browser. The room also briefly covers learning habits and offensive roles such as Penetration Tester, Red Teamer, and Security Engineer.
+
+## References
+
+- [Offensive Security Intro – TryHackMe](https://tryhackme.com/room/offensivesecurityintro)
+- [Gobuster (OJ Reeves)](https://github.com/OJ/gobuster)
+- [dirb | Kali Tools](https://www.kali.org/tools/dirb/)
+- [OWASP WSTG — Information Gathering](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/README)
 
 </details>
 
@@ -173,6 +370,41 @@ The **Intro to LAN** TryHackMe room builds on basic networking concepts by focus
     - **DHCP ACK** – the server acknowledges and confirms the lease.
   - This automation simplifies IP management, especially in large LANs.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes an **interactive topology lab** (View Site) where you introduce failures and see how star, bus, and ring designs break.
+
+### **Overview**
+
+- [ ] Break each topology as instructed and recover the lab flag.
+- [ ] You will:
+  - [ ] Open the interactive topology lab.
+  - [ ] Cut cables / fail devices to observe single points of failure.
+- [ ] Success: flag `THM{TOPOLOGY_FLAWS}`.
+
+### **Task 1: Explore topologies**
+
+- [ ] Click **View Site** for the topology lab.
+- [ ] Inspect **star** (central device is a single point of failure).
+- [ ] Inspect **bus** (backbone cable is a single point of failure).
+- [ ] Inspect **ring** (one cut or failed device can break the loop).
+
+### **Task 2: Introduce failures and collect the flag**
+
+- [ ] Follow the room prompts to cut cables or fail devices.
+- [ ] Observe which communications stop in each design.
+- [ ] Collect `THM{TOPOLOGY_FLAWS}`.
+
+Successfully demonstrated topology flaws in the interactive lab.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is mostly conceptual and uses interactive labs through the browser. There are no specific command-line tools emphasised beyond what you have learned previously; the focus is on understanding topologies, devices, and protocols like ARP and DHCP.
@@ -181,6 +413,11 @@ This room is mostly conceptual and uses interactive labs through the browser. Th
 # No primary terminal commands highlighted in this LAN topology and subnetting room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming component in this room. Instead, you work with visual diagrams, interactive labs, and conceptual models of how LAN devices and protocols operate.
@@ -188,6 +425,11 @@ There is no programming component in this room. Instead, you work with visual di
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -366,6 +608,8 @@ There is no programming component in this room. Instead, you work with visual di
 
 </details>
 
+</details>
+
 ## Summary
 
 The Intro to LAN room explains how local area networks are structured using different topologies, and how devices like switches and routers move traffic efficiently and reliably. You learn the trade-offs between star, bus, and ring designs, and see how topology flaws can cause failures. The room also introduces subnetting, ARP, and DHCP, showing how networks are divided, how devices discover each other’s hardware addresses, and how IP addresses are automatically assigned. Together, these concepts form the core of how LANs are built, managed, and kept functioning.
@@ -374,143 +618,8 @@ The Intro to LAN room explains how local area networks are structured using diff
 
 - [Intro to LAN – TryHackMe](https://tryhackme.com/room/introtolan)
 - [Intro to LAN - Youtube](https://www.youtube.com/watch?v=csYtPidvvFQ)
-
-</details>
-
-### Question 2: What is the main goal of offensive security?
-
-<details>
-<summary>Answer</summary>
-
-- [x] To understand hacker tactics and enhance system defences by finding and exploiting vulnerabilities in a controlled way.
-
-</details>
-
-### Question 3: What role do Virtual Machines play in this TryHackMe room?
-
-<details>
-<summary>Answer</summary>
-
-- [x] They provide simulated environments that complement the lesson so you can practice hacking (e.g. FakeBank) in a legal, safe setting.
-
-</details>
-
-### Question 4: What is Gobuster used for in this room?
-
-<details>
-<summary>Answer</summary>
-
-- [x] Gobuster is a command-line tool used to brute-force a website for hidden directories and pages by trying words from a wordlist against the target URL.
-
-</details>
-
-### Question 5: What do the flags `-u` and `-w` mean in the Gobuster command?
-
-<details>
-<summary>Answer</summary>
-
-- [x] `-u` specifies the target website URL to scan
-- [x] `-w` specifies the path to the wordlist file used for brute-forcing directory/page names.
-
-</details>
-
-### Question 6: What does Status 200 in Gobuster output indicate?
-
-<details>
-<summary>Answer</summary>
-
-- [x] The page or directory exists and returned a successful HTTP response (OK), so it is a valid, reachable path on the target.
-
-</details>
-
-### Question 7: Why might hidden pages like admin or bank-transfer be dangerous if left exposed?
-
-<details>
-<summary>Answer</summary>
-
-- [x] They can give attackers access to sensitive functions (e.g. admin controls or money transfers) due to human error or negligence in access control.
-
-</details>
-
-### Question 8: What is the hidden page you are directed to find and use in the FakeBank task?
-
-<details>
-<summary>Answer</summary>
-
-- [x] The secret bank transfer page: `/bank-transfer`.
-
-</details>
-
-### Question 9: In the room task, which accounts are involved in the transfer?
-
-<details>
-<summary>Answer</summary>
-
-- [x] Transfer $2000 from account 2276 to your account (account number 8881).
-
-</details>
-
-### Question 10: How should an ethical hacker use a vulnerability like an exposed bank-transfer page?
-
-<details>
-<summary>Answer</summary>
-
-- [x] With permission, find the vulnerability, demonstrate impact, and report it to the organisation (e.g. the bank) so they can fix it before a malicious hacker exploits it.
-
-</details>
-
-### Question 11: What is a Penetration Tester's main responsibility?
-
-<details>
-<summary>Answer</summary>
-
-- [x] Testing technology products to find exploitable security vulnerabilities.
-
-</details>
-
-### Question 12: How does a Red Teamer differ from a typical penetration tester?
-
-<details>
-<summary>Answer</summary>
-
-- [x] A Red Teamer acts as an adversary, attacking the organisation and providing feedback from an attacker’s perspective, often in broader, more realistic scenarios.
-
-</details>
-
-### Question 13: What does a Security Engineer typically focus on?
-
-<details>
-<summary>Answer</summary>
-
-- [x] Designing, monitoring, and maintaining security controls, networks, and systems to help prevent cyberattacks.
-
-</details>
-
-### Question 14: What is the recommended way to start learning cybersecurity on TryHackMe?
-
-<details>
-<summary>Answer</summary>
-
-- [x] Break topics down, choose an area of interest, and practice regularly with hands-on exercises—for example, building a habit of learning a little each day on TryHackMe.
-
-</details>
-
-### Question 15: Where do you confirm that your FakeBank transfer succeeded?
-
-<details>
-<summary>Answer</summary>
-
-- [x] On your account page; refresh the page if needed to see the updated balance.
-
-</details>
-
-## Summary
-
-Offensive Security is about thinking like an attacker to find and fix weaknesses. This room introduces the idea by having you use Gobuster to find a hidden bank-transfer page on FakeBank, then perform a simulated transfer. You use the terminal (Gobuster with `-u` and `-w`), interpret results (e.g. Status 200), and complete the task in the browser. The room also briefly covers learning habits and offensive roles such as Penetration Tester, Red Teamer, and Security Engineer.
-
-## References
-
-- [Offensive Security Intro – TryHackMe](https://tryhackme.com/room/offensivesecurityintro)
+- [RFC 826 — An Ethernet Address Resolution Protocol](https://www.rfc-editor.org/rfc/rfc826.html)
+- [RFC 2131 — Dynamic Host Configuration Protocol](https://www.rfc-editor.org/rfc/rfc2131.html)
 
 </details>
 
@@ -561,6 +670,39 @@ Defensive security spans tasks such as user awareness training, asset management
   - Examples: multiple failed logins (possibly user error or brute force), connections from unknown IPs
   - Analysts investigate, correlate events, and identify indicators such as flags (e.g. `THM{THREAT-BLOCKED}`) during exercises
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a **SIEM / SOC-style** simulation. Follow the investigation steps in the dashboard.
+
+### **Overview**
+
+- [ ] Work the simulated investigation to the success flag.
+- [ ] You will:
+  - [ ] Review alerts and evidence in the monitoring UI.
+  - [ ] Identify the malicious activity the room asks for.
+- [ ] Success: flag `THM{THREAT-BLOCKED}` when the investigation is complete.
+
+### **Task 1: Open the simulation**
+
+- [ ] Start the room site / machine as instructed.
+- [ ] Open the monitoring or SIEM-style dashboard.
+
+### **Task 2: Investigate and finish**
+
+- [ ] Review alerts and related evidence.
+- [ ] Complete the room's investigation steps.
+- [ ] Confirm the flag `THM{THREAT-BLOCKED}`.
+
+Successfully finished the defensive investigation simulation.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is largely conceptual and interface‑driven (SIEM simulation, dashboards) rather than command‑line heavy; there are no specific terminal commands required beyond interacting with the training environment.
@@ -569,6 +711,11 @@ This room is largely conceptual and interface‑driven (SIEM simulation, dashboa
 # No primary terminal command focus in this defensive room
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no code implementation focus in this lesson. Instead, it emphasises processes (SOC, DFIR, IR phases) and analysis of alerts, logs, and malware behaviour.
@@ -576,6 +723,11 @@ There is no code implementation focus in this lesson. Instead, it emphasises pro
 ```py
 # No code samples for this defensive security introduction
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -755,6 +907,8 @@ There is no code implementation focus in this lesson. Instead, it emphasises pro
 
 </details>
 
+</details>
+
 ## Summary
 
 This lesson shifts from attacking to defending, showing how blue teams work to prevent, detect, and respond to threats. You learned about defensive tasks such as awareness, asset management, patching, firewalls and IPS, logging and monitoring, and specialised areas like SOC operations, threat intelligence, DFIR, and malware analysis. The scenario with a SIEM and alerts illustrates how analysts triage events and identify real threats. Together, these concepts form the foundation of a robust, threat‑informed defensive posture.
@@ -762,6 +916,8 @@ This lesson shifts from attacking to defending, showing how blue teams work to p
 ## References
 
 - [Defensive Security Intro – TryHackMe](https://tryhackme.com/room/defensivesecurityintro)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
 
 </details>
 
@@ -796,6 +952,45 @@ This TryHackMe room introduces defensive security from the defender’s point of
   - Updating security rules and adding defensive controls help prevent similar attacks in the future.
   - Stopping the attacker while you investigate and fix vulnerabilities is known as containment.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is the room's **SOC monitoring dashboard** walkthrough. Detect, identify, and contain an attack on FakeBank.
+
+### **Overview**
+
+- [ ] Detect suspicious traffic, identify the attacker's goal, and contain it.
+- [ ] You will:
+  - [ ] Review recent alerts and find source IP **32.122.195.63**.
+  - [ ] Read the latest URL discovery attempt (`https://fakebank.com/admin`).
+  - [ ] Block the IP and apply the remaining defensive actions.
+- [ ] Success: flag `THM{FAKEBANK-SECURED}`.
+
+### **Task 1: Review alerts**
+
+- [ ] Open the monitoring dashboard.
+- [ ] Review recent alerts and note source IP **32.122.195.63**.
+
+### **Task 2: Identify the attack**
+
+- [ ] Open **URL Discovery Attempts**.
+- [ ] Confirm the latest URL: **https://fakebank.com/admin**.
+
+### **Task 3: Contain the attack**
+
+- [ ] Block the attacker IP.
+- [ ] Apply rate limiting and update security rules as the room requires.
+- [ ] Confirm `THM{FAKEBANK-SECURED}`.
+
+Successfully contained the attack in the defensive dashboard lab.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily focused on using a graphical monitoring dashboard and simulated controls rather than running terminal commands. You interact with the interface to view alerts, identify the malicious IP, and apply blocking and rate-limiting actions.
@@ -805,6 +1000,11 @@ This room is primarily focused on using a graphical monitoring dashboard and sim
 # actions are taken via the monitoring dashboard UI.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no specific code implementation in this exercise. The emphasis is on understanding alerts, recognising suspicious behaviour, and applying defensive actions (blocking IPs, rate limiting, updating rules) through the simulated environment.
@@ -812,6 +1012,11 @@ There is no specific code implementation in this exercise. The emphasis is on un
 ```py
 # No code samples for this defensive security exercise
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -930,6 +1135,8 @@ There is no specific code implementation in this exercise. The emphasis is on un
 
 </details>
 
+</details>
+
 ## Summary
 
 In this TryHackMe room, you approach security from the defender’s perspective. You monitor a simulated banking environment, review alerts, identify a suspicious source IP and an attacker probing an admin URL, and then apply defensive actions such as IP blocking, rate limiting, and updating rules. The exercise reinforces the core idea that defensive security is about early detection, investigation, and containment of attacks to keep systems secure.
@@ -937,6 +1144,8 @@ In this TryHackMe room, you approach security from the defender’s perspective.
 ## References
 
 - [Defensive Security Intro – TryHackMe](https://tryhackme.com/room/defensivesecurityintro)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
 
 </details>
 
@@ -1028,6 +1237,25 @@ The **Careers in Cyber** TryHackMe room gives an overview of key cyber security 
     - Red Teamer
   - Career Guides: Red Teaming roles, salaries, and opportunities.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. The room is a career map (roles, learning paths, and guides), not a machine or View Site walkthrough.
+
+### **Overview**
+
+- [ ] Review the role descriptions and pick a target path.
+- [ ] You will:
+  - [ ] Compare analyst, engineer, IR, forensics, malware, pentest, and red-team work.
+  - [ ] Note the TryHackMe learning paths listed for the role you want.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is informational and career-focused; it does not centre on specific terminal commands. Instead, it introduces you to roles and suggests learning paths and resources that will later involve hands-on labs and command-line work.
@@ -1036,6 +1264,11 @@ This room is informational and career-focused; it does not centre on specific te
 # No primary terminal commands for this careers overview room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no code to write or analyse in this room. The emphasis is on understanding job roles, not on implementing technical solutions directly within the exercise.
@@ -1043,6 +1276,11 @@ There is no code to write or analyse in this room. The emphasis is on understand
 ```py
 # No code snippets for the Careers in Cyber room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1164,6 +1402,8 @@ There is no code to write or analyse in this room. The emphasis is on understand
 
 </details>
 
+</details>
+
 ## Summary
 
 The Careers in Cyber room outlines why cyber security is a high-opportunity field and introduces key roles such as Security Analyst, Security Engineer, Incident Responder, Digital Forensics Analyst, Malware Analyst, Penetration Tester, and Red Teamer. For each role, you learn the core responsibilities and how they contribute to defending organisations or understanding threats. The room also points you to TryHackMe learning paths and career guides so you can start building the practical skills and knowledge required for your target role.
@@ -1171,6 +1411,9 @@ The Careers in Cyber room outlines why cyber security is a high-opportunity fiel
 ## References
 
 - [Careers in Cyber – TryHackMe](https://tryhackme.com/room/careersincyber)
+- [NICE Framework Resource Center (NIST)](https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center)
+- [NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity](https://csrc.nist.gov/pubs/sp/800/181/r1/final)
+- [CISA cybersecurity career resources](https://www.cisa.gov/cybersecurity-career-resources)
 
 </details>
 
@@ -1243,6 +1486,44 @@ The **What is Networking?** TryHackMe room introduces networking from first prin
   - Example: pinging `192.168.1.254` and seeing multiple ICMP packets sent and received with an average time.
   - In the lab, you ping `8.8.8.8` to reveal a flag.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes interactive exercises for **ping** and **MAC spoofing** on a guest Wi-Fi scenario.
+
+### **Overview**
+
+- [ ] Prove basic connectivity with ping, then complete the MAC-filter Wi-Fi lab.
+- [ ] You will:
+  - [ ] Ping `8.8.8.8` in the lab to earn `THM{I_PINGED_THE_SERVER}`.
+  - [ ] Complete the interactive Wi-Fi / MAC exercise for `THM{YOU_GOT_ON_TRYHACKME}`.
+
+### **Task 1: Ping a host**
+
+- [ ] Open the lab terminal or interactive ping control.
+- [ ] Run:
+
+```bash
+ping 8.8.8.8
+```
+
+- [ ] Collect `THM{I_PINGED_THE_SERVER}`.
+
+### **Task 2: Guest Wi-Fi MAC exercise**
+
+- [ ] Open the interactive hotel / guest Wi-Fi lab.
+- [ ] Follow the room steps for the MAC-filter scenario.
+- [ ] Collect `THM{YOU_GOT_ON_TRYHACKME}`.
+
+Successfully completed the networking labs.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The main command-line tool introduced is `ping`, which tests connectivity and latency between devices using ICMP.
@@ -1257,6 +1538,11 @@ ping 8.8.8.8
 
 On most systems, `ping` will send multiple packets and show statistics including packets sent/received and average round-trip time.
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 This room focuses on conceptual networking foundations and simple command-line usage rather than programming. There are no specific code samples to implement; instead you practice using built-in tools like `ping` and visualise IP and MAC addressing.
@@ -1264,6 +1550,11 @@ This room focuses on conceptual networking foundations and simple command-line u
 ```py
 # No programming examples in this networking fundamentals room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1405,6 +1696,8 @@ This room focuses on conceptual networking foundations and simple command-line u
 
 </details>
 
+</details>
+
 ## Summary
 
 This room explains networking in both everyday and technical terms, showing that networks are simply collections of connected things. You learn how the Internet is a giant network made of many private and public networks, and how devices identify themselves using IP and MAC addresses. The room introduces IPv4 vs IPv6, demonstrates why MAC spoofing can undermine weak access controls, and shows how `ping` and ICMP are used to test connectivity. These fundamentals provide a base for understanding more advanced networking and cyber security concepts.
@@ -1413,6 +1706,8 @@ This room explains networking in both everyday and technical terms, showing that
 
 - [What is Networking? – TryHackMe](https://tryhackme.com/room/whatisnetworking)
 - [What is Networking? - Youtube Networking Basics](https://www.youtube.com/watch?v=42u_2e6eNF4)
+- [RFC 791 — Internet Protocol](https://www.rfc-editor.org/rfc/rfc791.html)
+- [RFC 792 — Internet Control Message Protocol](https://www.rfc-editor.org/rfc/rfc792.html)
 
 </details>
 
@@ -1490,6 +1785,41 @@ The **Intro to LAN** TryHackMe room explores how Local Area Networks (LANs) are 
   - You explore how single points of failure and design weaknesses cause outages.
   - Completing the lab and breaking the topologies as instructed yields the flag `THM{TOPOLOGY_FLAWS}`.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes an **interactive topology lab** (View Site) where you introduce failures and see how star, bus, and ring designs break.
+
+### **Overview**
+
+- [ ] Break each topology as instructed and recover the lab flag.
+- [ ] You will:
+  - [ ] Open the interactive topology lab.
+  - [ ] Cut cables / fail devices to observe single points of failure.
+- [ ] Success: flag `THM{TOPOLOGY_FLAWS}`.
+
+### **Task 1: Explore topologies**
+
+- [ ] Click **View Site** for the topology lab.
+- [ ] Inspect **star** (central device is a single point of failure).
+- [ ] Inspect **bus** (backbone cable is a single point of failure).
+- [ ] Inspect **ring** (one cut or failed device can break the loop).
+
+### **Task 2: Introduce failures and collect the flag**
+
+- [ ] Follow the room prompts to cut cables or fail devices.
+- [ ] Observe which communications stop in each design.
+- [ ] Collect `THM{TOPOLOGY_FLAWS}`.
+
+Successfully demonstrated topology flaws in the interactive lab.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily conceptual and uses interactive browser‑based labs rather than CLI tools. There is no specific terminal command focus beyond your existing networking knowledge.
@@ -1498,6 +1828,11 @@ This room is primarily conceptual and uses interactive browser‑based labs rath
 # No primary terminal commands for the Intro to LAN room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming component in this room. The focus is on network design, behaviour, and protocols rather than writing or analysing code.
@@ -1505,6 +1840,11 @@ There is no programming component in this room. The focus is on network design, 
 ```py
 # No code snippets for the Intro to LAN room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1704,6 +2044,8 @@ There is no programming component in this room. The focus is on network design, 
 
 </details>
 
+</details>
+
 ## Summary
 
 The Intro to LAN room explains how local area networks can be built using different topologies—star, bus, and ring—and what trade‑offs each design introduces in terms of cost, scalability, and reliability. It shows how switches and routers move traffic efficiently, how subnetting divides a larger network into smaller, manageable pieces, and how ARP and DHCP help devices discover each other and automatically obtain IP addresses. Through an interactive lab, you see how single points of failure and design weaknesses can break networks and practice reasoning about resilience. Together, these concepts give you a solid foundation for understanding and troubleshooting LANs.
@@ -1712,6 +2054,8 @@ The Intro to LAN room explains how local area networks can be built using differ
 
 - [Intro to LAN – TryHackMe](https://tryhackme.com/room/introtolan)
 - [Intro to LAN – YouTube](https://www.youtube.com/watch?v=csYtPidvvFQ)
+- [RFC 826 — An Ethernet Address Resolution Protocol](https://www.rfc-editor.org/rfc/rfc826.html)
+- [RFC 2131 — Dynamic Host Configuration Protocol](https://www.rfc-editor.org/rfc/rfc2131.html)
 
 </details>
 
@@ -1776,6 +2120,36 @@ The **OSI Model** (Open Systems Interconnection Model) is a fundamental networki
   - A gamified exercise where you climb layers of the OSI model in the correct order.
   - Escaping the dungeon rewards you with the flag `THM{OSI_DUNGEON_ESCAPED}` and reinforces layer ordering.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room focuses on conceptual understanding of OSI layers and protocol behaviour rather than specific command‑line tools. Any practical elements are delivered through interactive labs (such as the OSI dungeon game) rather than CLI usage.
@@ -1784,6 +2158,11 @@ This room focuses on conceptual understanding of OSI layers and protocol behavio
 # No primary terminal commands for the OSI Model room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no direct programming component in this room. Instead, you focus on how network protocols and layers interact, which underpins how applications and services are implemented in code elsewhere.
@@ -1791,6 +2170,11 @@ There is no direct programming component in this room. Instead, you focus on how
 ```py
 # No code snippets for the OSI Model room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1983,6 +2367,8 @@ There is no direct programming component in this room. Instead, you focus on how
 
 </details>
 
+</details>
+
 ## Summary
 
 The OSI Model organises networking into seven logical layers, from the physical movement of bits up to the user‑facing applications. Each layer has a specific role: the Physical and Data Link layers handle signals and local addressing, the Network and Transport layers route and reliably deliver data using IP, TCP, and UDP, and the Session, Presentation, and Application layers manage sessions, translation, security, and user interaction. By understanding how encapsulation works and what happens at each layer, you can reason about where problems occur, why certain protocols are used, and how different systems interoperate. Hands‑on activities like the OSI dungeon reinforce layer order and responsibilities through practice.
@@ -1990,6 +2376,7 @@ The OSI Model organises networking into seven logical layers, from the physical 
 ## References
 
 - [OSI Model – TryHackMe](https://tryhackme.com/room/osimodelzi)
+- [ITU-T X.200 — OSI Basic Reference Model](https://www.itu.int/rec/T-REC-X.200)
 
 </details>
 
@@ -2091,6 +2478,36 @@ The **Packets & Frames** TryHackMe room explains how data is broken into smaller
   - Another challenge involves connecting to IP `8.8.8.8` on port `1234`, which returns the flag `THM{YOU_CONNECTED_TO_A_PORT}`.
   - Additional tasks reinforce concepts of TCP vs UDP, and using ports in practice.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is primarily conceptual and uses static or browser‑based labs rather than heavy command‑line interaction. You may, however, conceptually work with tools like `netcat` or similar to connect to specific IP:port combinations in practical challenges.
@@ -2100,6 +2517,11 @@ This room is primarily conceptual and uses static or browser‑based labs rather
 nc 8.8.8.8 1234
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no dedicated programming component; instead, you focus on how network protocols structure and move data. Any code‑like interactions are typically done through network tools or lab interfaces.
@@ -2107,6 +2529,11 @@ There is no dedicated programming component; instead, you focus on how network p
 ```py
 # No direct code samples for the Packets & Frames room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2294,6 +2721,8 @@ There is no dedicated programming component; instead, you focus on how network p
 
 </details>
 
+</details>
+
 ## Summary
 
 The Packets & Frames room deepens your understanding of how data is structured and transported on networks. You learn the distinction between packets and frames across OSI layers, see how IP and TCP/UDP headers support routing and reliability, and explore how the TCP/IP model maps to practical networking. By comparing TCP and UDP, examining key headers, and working with common ports and simple labs, you build intuition for how real‑world traffic is formed, transmitted, and interpreted. This knowledge is essential for analysing network behaviour and troubleshooting connectivity issues in later security work.
@@ -2302,6 +2731,7 @@ The Packets & Frames room deepens your understanding of how data is structured a
 
 - [Packets & Frames – TryHackMe](https://tryhackme.com/room/packetsframes)
 - [Packets & Frames – YouTube](https://www.youtube.com/watch?v=vzcLrE0SfiQ)
+- [RFC 791 — Internet Protocol](https://www.rfc-editor.org/rfc/rfc791.html)
 
 </details>
 
@@ -2350,6 +2780,36 @@ The **Extending Your Network** TryHackMe room builds on core LAN ideas by coveri
   - Use **Chrome** or **Firefox**. Send a **TCP** packet from **computer1** to **computer3** to reveal the flag `THM{YOU'VE_GOT_DATA}`.
   - The room also asks how many **HANDSHAKE** entries appear in the **Network Log** (answer in the Q&A section).
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is taught mainly through diagrams, firewall and VPN concepts, and **in-browser** labs (firewall static site, packet simulator). Router and firewall **configuration** is usually done through a **web administration** interface on the device rather than a fixed CLI script in the lesson.
@@ -2359,6 +2819,11 @@ This room is taught mainly through diagrams, firewall and VPN concepts, and **in
 # Port forwarding and firewall rules are typically applied in the router/gateway admin UI.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 There is no programming track in this room; learning is conceptual plus interactive web labs.
@@ -2366,6 +2831,11 @@ There is no programming track in this room; learning is conceptual plus interact
 ```py
 # No code snippets for the Extending Your Network room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2551,6 +3021,8 @@ There is no programming track in this room; learning is conceptual plus interact
 
 </details>
 
+</details>
+
 ## Summary
 
 **Extending Your Network** ties together how internal services are exposed (**port forwarding** on the **router**), how **firewalls** enforce allow/deny policy at layers **3 and 4** using **stateful** or **stateless** inspection, and how **VPNs** (PPP, PPTP, **IPSec**) extend and protect connectivity. You also reinforce **routing** vs switching, **Layer 2 vs Layer 3** switches, and **VLAN** segmentation. Hands-on items include a **firewall** rules lab, a **packet/network simulator** with TCP handshake visibility, and flags that anchor the concepts in practice.
@@ -2559,6 +3031,7 @@ There is no programming track in this room; learning is conceptual plus interact
 
 - [Extending Your Network – TryHackMe](https://tryhackme.com/room/extendingyournetwork)
 - [Snort](https://www.snort.org)
+- [RFC 1918 — Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918.html)
 
 </details>
 
@@ -2605,6 +3078,22 @@ There is no programming track in this room; learning is conceptual plus interact
 - [x] **TTL (Time To Live)**
   - A number in **seconds** telling resolvers how long they may **cache** that record before refreshing.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only.
+
+### **Overview**
+
+- [ ] Review the notes; there is no machine or View Site walkthrough here.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The room’s embedded tool shows equivalent CLI commands. On Linux/macOS you can query records with **`dig`** or **`nslookup`**. Replace the domain with your target.
@@ -2632,6 +3121,11 @@ nslookup -type=A www.example.com
 nslookup -type=MX example.com
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 TXT records are plain strings. Examples from the room’s style of content:
@@ -2642,6 +3136,11 @@ _acme-challenge.example.com TXT "token_value_here"
 _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com; adkim=s; aspf=s; pct=100"
 @ TXT "MS=ms12345678"
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -2828,6 +3327,8 @@ _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com
 
 </details>
 
+</details>
+
 ## Summary
 
 **DNS in Detail** explains how names map to addresses, how **FQDNs** are built from TLDs, registrable labels, and subdomains, and how **A**, **AAAA**, **CNAME**, **MX**, and **TXT** records differ. You follow the **recursive** resolution path from cache and ISP resolvers through **root** and **TLD** servers to **authoritative** data, and you see how **TTL** controls caching. The hands-on zone reinforces reading **CNAME**, **TXT**, **MX** priority, and **A** records in a realistic lookup workflow.
@@ -2837,6 +3338,8 @@ _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com
 - [DNS in Detail – TryHackMe](https://tryhackme.com/room/dnsindetail)
 - [DNS in Detail – YouTube](https://www.youtube.com/watch?v=jpTY1S5vs9k)
 - [IANA Root Zone Database](https://www.iana.org/domains/root/db) (TLD reference)
+- [RFC 1034 — Domain Names (concepts and facilities)](https://www.rfc-editor.org/rfc/rfc1034.html)
+- [RFC 1035 — Domain Names (implementation and specification)](https://www.rfc-editor.org/rfc/rfc1035.html)
 
 </details>
 
@@ -2912,6 +3415,36 @@ _dmarc.example.com TXT "v=DMARC1; p=reject; rua=mailto:dmarc-reports@example.com
   - Cookies are set via **`Set-Cookie`** responses and returned on subsequent requests in the **`Cookie`** header (often **not** the cleartext password—a **token**).
   - Use **Developer Tools → Network** to inspect requests, responses, and **Cookies** per resource.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 You can reproduce many room ideas with **`curl`**: methods, headers, and viewing status lines. Replace hosts and paths as needed.
@@ -2932,6 +3465,11 @@ curl -i -X PUT -d "username=admin" https://example.com/user/2
 # DELETE
 curl -i -X DELETE https://example.com/user/1
 ```
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -2957,6 +3495,11 @@ Content-Length: 98
 <body>Welcome To TryHackMe.com</body>
 </html>
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3151,6 +3694,8 @@ Content-Length: 98
 
 </details>
 
+</details>
+
 ## Summary
 
 **HTTP in Detail** explains how browsers and servers exchange resources using **URLs**, **HTTP/1.1** request lines and **headers**, and structured **responses** with **status codes** from **1xx** through **5xx**. You compare **GET**, **POST**, **PUT**, and **DELETE**, interpret common codes like **200**, **201**, **401**, **404**, and **503**, and see how **cookies** compensate for HTTP’s **stateless** nature via **`Set-Cookie`** and **`Cookie`**. The mock certificate exercise and the **request emulator** turn the theory into short, flag-based practice.
@@ -3160,6 +3705,8 @@ Content-Length: 98
 - [HTTP in Detail – TryHackMe](https://tryhackme.com/room/httpindetail)
 - [HTTP in Detail – YouTube](https://www.youtube.com/watch?v=XZyapIKV3Rw)
 - [HTTP Cats](https://http.cat) (visual HTTP status code reference)
+- [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [MDN — HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
 </details>
 
@@ -3215,6 +3762,36 @@ Content-Length: 98
   - **Sanitise** (filter) input before use; **never trust user input**; related deeper topics include **SQL injection** on the server side.
   - Room task: inject HTML so a **malicious link** to `http://hacker.com` appears → flag **`HTML_INJ3CTI0N`**.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 The room emphasises **browser** tools and **view source**. On the command line you can still **fetch** HTML to inspect (similar to viewing source offline):
@@ -3228,6 +3805,11 @@ Use **find** / **grep** locally on saved HTML if you mirror a page for review (o
 ```bash
 grep -n "password\|passwd\|secret" saved.html
 ```
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -3260,6 +3842,11 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
   Click Me!
 </button>
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3412,6 +3999,8 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
 
 </details>
 
+</details>
+
 ## Summary
 
 **How Websites Work** ties together **browser ↔ server** requests, **front end** vs **back end**, and the **HTML / CSS / JavaScript** stack. You practise **HTML structure** and **attributes** (`class`, `id`, `src`), use **View Page Source** to audit pages, complete small **HTML/JS** labs for flags (**`HTMLHERO`**, **`DOGHTML`**, **`JSISFUN`**), find **exposed secrets** like **`testpasswd`**, and see how **HTML injection** (**`HTML_INJ3CTI0N`**) arises when **input is not sanitised**.
@@ -3420,6 +4009,8 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
 
 - [How Websites Work – TryHackMe](https://tryhackme.com/room/howwebsiteswork)
 - [How Websites Work – YouTube](https://www.youtube.com/watch?v=iWoiwFRLV4I)
+- [MDN — HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content)
+- [MDN — JavaScript first steps](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting)
 
 </details>
 
@@ -3465,6 +4056,36 @@ document.getElementById("demo").innerHTML = "Hack the Planet";
 - [x] **Quiz task**
   - Drag-and-drop tiles into the **correct order** of how a **request to a website** works; correct slots turn **green**, wrong **red**; avoid **refreshing** (resets tiles). Flag: **`THM{YOU_GOT_THE_ORDER}`**.
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room includes a hands-on or interactive exercise. Use the steps already listed in Detailed Explanation, then tick them off here.
+
+### **Overview**
+
+- [ ] Complete the room's machine, View Site, or interactive exercise.
+- [ ] Follow the task list in the room and in Detailed Explanation.
+- [ ] Record any flag or success message the room shows.
+
+### **Task 1: Start the exercise**
+
+- [ ] Click **Start Machine** or **View Site** as the room instructs.
+- [ ] Wait until the lab UI is ready.
+
+### **Task 2: Complete the room tasks**
+
+- [ ] Work through each practical task in order.
+- [ ] Note flags or confirmation text from the room (do not invent them).
+
+Successfully finished the room's practical exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 Default **document roots** are configuration choices—on Linux servers you often see:
@@ -3480,6 +4101,11 @@ dir C:\inetpub\wwwroot
 ```
 
 Use your distro’s package docs to locate **`nginx`** / **`apache2`** site configs for **virtual hosts** (e.g. under `/etc/nginx/sites-enabled/` or `/etc/apache2/sites-available/`).
+
+</details>
+
+<details>
+  <summary>Code</summary>
 
 ## Code
 
@@ -3498,6 +4124,11 @@ Rendered response to the client:
   </body>
 </html>
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -3641,6 +4272,8 @@ Rendered response to the client:
 <summary>Answer</summary>
 
 - [x] **Static** content is served **unchanged** from files; **dynamic** content is **generated or selected per request** on the **backend** before the response is sent.
+
+</details>
 
 </details>
 

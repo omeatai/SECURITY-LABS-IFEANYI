@@ -32,6 +32,55 @@ Offensive Security is about thinking like an attacker to find weaknesses before 
   - Return to your account page and confirm the balance is positive
   - When the balance turns positive, a green pop-up appears with the words **BANK-HACKED** (ALL CAPS)
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is the room's **FakeBank** walkthrough on the TryHackMe virtual desktop. Work only in that lab. Pause until the machine is on and the FakeBank browser tab is visible.
+
+### **Overview**
+
+- [ ] Practice offensive security against **FakeBank** in a legal lab.
+- [ ] You will:
+  - [ ] Start the virtual desktop and note account **8881**.
+  - [ ] Use **dirb** to find hidden pages.
+  - [ ] Open `/bank-transfer`, deposit funds, and confirm the balance.
+- [ ] Success: the account page shows a positive balance and a green pop-up **BANK-HACKED**.
+
+### **Task 1: Start the lab**
+
+- [ ] Click **Start Machine** (or **Show Split View** if the desktop is hidden).
+- [ ] Wait until the simulated browser opens **FakeBank**.
+- [ ] Note your FakeBank account number: **8881**.
+
+### **Task 2: Find hidden pages**
+
+- [ ] Open the **Terminal** on the lab machine.
+- [ ] Run directory brute-force against FakeBank:
+
+```bash
+dirb http://fakebank.thm
+```
+
+- [ ] In the output, treat lines that start with `+` as discovered pages.
+- [ ] Confirm dirb reports `/images` and `/bank-transfer`.
+
+### **Task 3: Use the transfer page**
+
+- [ ] In the simulated browser, open `http://fakebank.thm/bank-transfer`.
+- [ ] Use account number **8881**.
+- [ ] Deposit **$2000** (or more).
+- [ ] Return to your account page and confirm the balance is positive.
+- [ ] Read the green pop-up: **BANK-HACKED** (ALL CAPS).
+
+Successfully completed the FakeBank lab when the balance is positive and **BANK-HACKED** is shown.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 Dirb is used to discover hidden directories and pages on a target website. Pass the target URL; any output lines starting with `+` indicate discovered pages.
@@ -42,9 +91,19 @@ dirb http://fakebank.thm
 
 Example idea of what you are looking for: dirb reports existing paths such as `http://fakebank.thm/images` and `http://fakebank.thm/bank-transfer`. Use the hidden `/bank-transfer` path in the browser to continue the attack.
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No code sections in this room; the activity uses terminal commands (dirb) and the FakeBank web interface only.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -186,6 +245,8 @@ No code sections in this room; the activity uses terminal commands (dirb) and th
 
 </details>
 
+</details>
+
 ## Summary
 
 This room introduces Offensive Security by having you think like a hacker against FakeBank. You start a virtual lab, note account **8881**, use **dirb** to find hidden pages (`/images` and `/bank-transfer`), abuse the exposed transfer panel to deposit funds, and capture the green flag **BANK-HACKED** when the balance turns positive.
@@ -193,6 +254,9 @@ This room introduces Offensive Security by having you think like a hacker agains
 ## References
 
 - [Offensive Security Intro – TryHackMe](https://tryhackme.com/room/offensivesecurityintro)
+- [Gobuster (OJ Reeves)](https://github.com/OJ/gobuster)
+- [dirb | Kali Tools](https://www.kali.org/tools/dirb/)
+- [OWASP WSTG — Information Gathering](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/README)
 
 </details>
 
@@ -240,6 +304,49 @@ Defensive security is about defending and securing devices and systems by detect
     - **Updating security rules** — tightens access controls to sensitive pages the attacker slipped through
   - Success flag: **THM{FAKEBANK-SECURED}**
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is the room's **SOC monitoring dashboard** walkthrough (View Site). You help apprentice analyst Joe detect, identify, and contain an attack on FakeBank.
+
+### **Overview**
+
+- [ ] Detect suspicious traffic, identify the attacker's goal, and contain it.
+- [ ] You will:
+  - [ ] Open the monitoring dashboard and review recent alerts.
+  - [ ] Identify the suspicious source IP and the latest URL discovery attempt.
+  - [ ] Block the attacker with a firewall rule.
+- [ ] Success: the attack is contained and the flag **THM{FAKEBANK-SECURED}** appears.
+
+### **Task 1: Detect suspicious activity**
+
+- [ ] Open the **monitoring dashboard**.
+- [ ] Review **recent alerts**.
+- [ ] Identify the suspicious source IP: **32.122.195.63**.
+
+### **Task 2: Identify the attack**
+
+- [ ] Open the **URL Discovery Attempts** list.
+- [ ] Read the **latest** URL Discovery Attempts entry.
+- [ ] Confirm the latest URL the attacker tried: **https://fakebank.com/admin**.
+
+### **Task 3: Contain the attack**
+
+- [ ] Review the security actions (two are already done).
+- [ ] Under **Add Firewall Rule**, enter IP **32.122.195.63**.
+- [ ] Select **BLOCK** from the dropdown.
+- [ ] Press **Apply**.
+- [ ] Confirm the success flag: **THM{FAKEBANK-SECURED}**.
+
+Successfully contained the FakeBank attack by blocking **32.122.195.63**.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room uses an interactive monitoring dashboard in the browser (View Site). There are no primary command-line tools; investigation and response happen through the SOC-style UI (alerts, URL discovery list, and firewall rules).
@@ -248,9 +355,19 @@ This room uses an interactive monitoring dashboard in the browser (View Site). T
 # No primary terminal commands in this defensive dashboard lab.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No code sections in this room; the activity uses the monitoring dashboard and firewall rule controls only.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -430,6 +547,8 @@ No code sections in this room; the activity uses the monitoring dashboard and fi
 
 </details>
 
+</details>
+
 ## Summary
 
 This room introduces defensive security by having you think like a defender with SOC analyst Joe. You use a monitoring dashboard to find the suspicious source IP **32.122.195.63**, identify URL discovery toward **https://fakebank.com/admin**, and contain the attack by blocking that IP with a firewall rule. Success yields the flag **THM{FAKEBANK-SECURED}**. Core idea: detect and respond—monitor, investigate, then contain before damage spreads.
@@ -437,6 +556,8 @@ This room introduces defensive security by having you think like a defender with
 ## References
 
 - [Defensive Security Intro – TryHackMe](https://tryhackme.com/room/defensivesecurityintro)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
+- [NIST SP 800-61 Rev. 2 — Computer Security Incident Handling Guide](https://csrc.nist.gov/pubs/sp/800/61/r2/final)
 
 </details>
 
@@ -528,6 +649,25 @@ Cyber security careers are in high demand and often offer high salaries. Roles s
   - Learning Paths: JR Penetration Tester, Offensive Pentesting, Red Teamer
   - Career Guides: Red Teaming: Job Roles, Salaries & Opportunities
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+No labs in this topic; the content is conceptual only. The room is a career map (roles, learning paths, and guides), not a machine or View Site walkthrough.
+
+### **Overview**
+
+- [ ] Review the role descriptions and pick a target path.
+- [ ] You will:
+  - [ ] Compare analyst, engineer, IR, forensics, malware, pentest, and red-team work.
+  - [ ] Note the TryHackMe learning paths listed for the role you want.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is informational and career-focused. It does not centre on specific terminal commands; later learning paths introduce hands-on labs and CLI work.
@@ -536,9 +676,19 @@ This room is informational and career-focused. It does not centre on specific te
 # No primary terminal commands for this careers overview room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No code sections in this room; the focus is understanding cyber security job roles, responsibilities, learning paths, and career resources.
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -755,6 +905,8 @@ No code sections in this room; the focus is understanding cyber security job rol
 
 </details>
 
+</details>
+
 ## Summary
 
 Careers in Cyber explains why security work is high-pay, exciting, and in demand (over 3.5 million unfilled roles), then surveys major roles: Security Analyst, Security Engineer, Incident Responder, Digital Forensics Examiner, Malware Analyst, Penetration Tester, and Red Teamer. For each role you get core purpose, responsibilities, and (where listed) TryHackMe learning paths and career guides to start building the right skills.
@@ -762,6 +914,9 @@ Careers in Cyber explains why security work is high-pay, exciting, and in demand
 ## References
 
 - [Careers in Cyber – TryHackMe](https://tryhackme.com/room/careersincyber)
+- [NICE Framework Resource Center (NIST)](https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center)
+- [NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity](https://csrc.nist.gov/pubs/sp/800/181/r1/final)
+- [CISA cybersecurity career resources](https://www.cisa.gov/cybersecurity-career-resources)
 
 </details>
 
@@ -831,6 +986,53 @@ Before securing systems, you need to understand what you are securing. This TryH
   - The boot process is especially important because it can be targeted by attackers
   - Next room (coming soon): Computer Types — how component combinations create different system types
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room uses two **interactive static sites** (View Site): identify PC components, then walk the boot sequence.
+
+### **Overview**
+
+- [ ] Identify core PC parts and complete the five-step boot path.
+- [ ] You will:
+  - [ ] Open the component identification static site and match each part to its role.
+  - [ ] Open the boot-sequence static site and press through power-on to OS load.
+- [ ] Success: flags `THM{4llpccomp0n3nts1d3nt1f13d}` and `THM{pc5ucce55fully5t4rt3d}`.
+
+### **Task 1: Identify PC components**
+
+- [ ] Click **View Site** for the component exercise.
+- [ ] Match each part to its job:
+  - [ ] Motherboard — holds and connects components
+  - [ ] CPU — executes instructions
+  - [ ] RAM — volatile working memory
+  - [ ] HDD / SSD — long-term storage
+  - [ ] Network adapter — talks to other systems
+  - [ ] PSU — supplies power
+  - [ ] Graphics card — drives the display
+  - [ ] Input / output devices and connectors
+- [ ] Complete the site to earn `THM{4llpccomp0n3nts1d3nt1f13d}`.
+
+### **Task 2: Walk the boot sequence**
+
+- [ ] Click **View Site** for the boot exercise.
+- [ ] Step through:
+  - [ ] Press the power button (PSU allows power to flow)
+  - [ ] Firmware starts (**UEFI**; BIOS is the older equivalent)
+  - [ ] **POST** checks required components
+  - [ ] UEFI picks a boot device from its priority list
+  - [ ] Bootloader loads the OS into RAM; UEFI hands over control
+- [ ] Complete the site to earn `THM{pc5ucce55fully5t4rt3d}`.
+
+Successfully identified the components and completed the boot-sequence exercise.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is conceptual and uses interactive static-site exercises in the browser (View Site). There are no primary command-line tools.
@@ -839,6 +1041,11 @@ This room is conceptual and uses interactive static-site exercises in the browse
 # No primary terminal commands in this computer-components and boot-sequence room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No programming component; learning is through explanations, diagrams, and static-site identification exercises.
@@ -846,6 +1053,11 @@ No programming component; learning is through explanations, diagrams, and static
 ```py
 # No code snippets for the Inside a Computer System room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1033,6 +1245,8 @@ No programming component; learning is through explanations, diagrams, and static
 
 </details>
 
+</details>
+
 ## Summary
 
 Inside a Computer System covers the core PC building blocks—motherboard, CPU, RAM, storage (HDD/SSD), network adapter, PSU, graphics card, and I/O—using a human-body analogy, then walks through the five-step boot path from power button to UEFI/POST, boot-device selection, bootloader, and OS in RAM. Interactive static sites reinforce component ID and boot order; flags `THM{4llpccomp0n3nts1d3nt1f13d}` and `THM{pc5ucce55fully5t4rt3d}` mark completion. These fundamentals matter later because component roles and the boot process underpin many security topics.
@@ -1040,6 +1254,8 @@ Inside a Computer System covers the core PC building blocks—motherboard, CPU, 
 ## References
 
 - [Inside a Computer System – TryHackMe](https://tryhackme.com/room/insideacomputer)
+- [UEFI Specifications](https://uefi.org/specifications)
+- [Power-on self-test (overview)](https://en.wikipedia.org/wiki/Power-on_self-test)
 
 </details>
 
@@ -1111,6 +1327,41 @@ Sophia was connecting a new device to her home WiFi when she noticed “NexusCoo
   - Complete the static site (View Site) on computer types
   - Flag: `THM{8_computer_types}`
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This room uses one **interactive static site** (View Site) on eight computer types from Sophia's Nova Labs internship story.
+
+### **Overview**
+
+- [ ] Distinguish computers you sit in front of from ones you use indirectly.
+- [ ] You will:
+  - [ ] Review laptop, desktop, workstation, server, smartphone, tablet, IoT, and embedded.
+  - [ ] Complete the static-site challenge.
+- [ ] Success: flag `THM{8_computer_types}`.
+
+### **Task 1: Review the eight types**
+
+- [ ] Computers with a screen and keyboard: **laptop**, **desktop**, **workstation**.
+- [ ] Computer that usually has no dedicated screen/keyboard: **server**.
+- [ ] Pocket / touch devices: **smartphone**, **tablet**.
+- [ ] Hidden computers: **IoT device** (networked, single purpose) vs **embedded computer** (built-in; may be offline).
+
+### **Task 2: Complete the static site**
+
+- [ ] Click **View Site**.
+- [ ] Classify each example into the correct type.
+- [ ] Submit to earn `THM{8_computer_types}`.
+
+Successfully classified the eight computer types on the static site.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room is conceptual and uses an interactive static-site exercise in the browser (View Site). There are no primary command-line tools.
@@ -1119,6 +1370,11 @@ This room is conceptual and uses an interactive static-site exercise in the brow
 # No primary terminal commands in this computer-types room.
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No programming component; learning is through the Sophia narrative, comparison tables, and the static-site challenge.
@@ -1126,6 +1382,11 @@ No programming component; learning is through the Sophia narrative, comparison t
 ```py
 # No code snippets for this computer-types room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1311,6 +1572,8 @@ No programming component; learning is through the Sophia narrative, comparison t
 
 </details>
 
+</details>
+
 ## Summary
 
 Through Sophia’s Nova Labs internship, this room maps eight computer types—laptop, desktop, workstation, server, smartphone, tablet, IoT device, and embedded computer—and shows why purpose and trade-offs (mobility vs power, reliability vs cost, connectivity vs isolation) drive design. Interactive static-site completion yields `THM{8_computer_types}`. The takeaway: there is no best computer, only the right tool for the job—and many of the most important systems are the ones you never see.
@@ -1318,6 +1581,7 @@ Through Sophia’s Nova Labs internship, this room maps eight computer types—l
 ## References
 
 - [Computer Types – TryHackMe](https://tryhackme.com/room/computertypes)
+- [NIST IoT initiatives](https://www.nist.gov/itl/applied-cybersecurity/nist-initiatives-iot)
 
 </details>
 
@@ -1387,6 +1651,65 @@ Early computers mostly worked alone—local files, local programs, no communicat
 - [x] **What comes next**
   - Next room covers the basics of **virtualization**—the infrastructure that supports internet services
 
+<details>
+  <summary>Lab</summary>
+
+## Lab
+
+This is a **browser Network-inspector** walkthrough on the TryHackMe lab machine. Pause until the machine is on and the split view is visible.
+
+### **Overview**
+
+- [ ] Inspect a real **GET** request and its response on the demo site.
+- [ ] You will:
+  - [ ] Start the lab machine and open Firefox.
+  - [ ] Open Developer Tools → **Network** and reload the page.
+  - [ ] Read scheme, host, filename, address, and status on the first GET.
+  - [ ] Open the **Response** tab to see the HTML body.
+- [ ] Success: you can name the host and scheme in `https://www.iamlearning.thm/contact` and you have seen a **200 OK** GET.
+
+### **Task 1: Start the lab machine**
+
+- [ ] Click **Start Lab Machine** (or **Start Split-screen** if the pane is hidden).
+- [ ] Wait until the machine status is **On**.
+- [ ] Confirm the desktop is visible in the split view.
+
+### **Task 2: Open the demo site in Firefox**
+
+- [ ] Click the **Firefox** icon on the lab desktop.
+- [ ] Confirm the address bar shows `http://httpdemo.local:8080`.
+- [ ] If it does not, type that URL and press Enter.
+
+### **Task 3: Open Developer Tools on the Network tab**
+
+- [ ] Press **F12**, or right-click the page and choose **Inspect**.
+- [ ] Click the **Network** tab.
+- [ ] Reload the page (circular reload control next to the address bar).
+- [ ] Confirm multiple **GET** rows appear in the Network list.
+
+### **Task 4: Inspect the first GET**
+
+- [ ] Click the **first GET** entry.
+- [ ] In the right-hand panel, note:
+  - [ ] **Scheme** — HTTP or HTTPS
+  - [ ] **Host** — name of the host you requested
+  - [ ] **Filename** — file requested; `"/"` maps to `index.html`
+  - [ ] **Address** — IP of the host (lab example: `127.0.0.1` when hosted locally)
+  - [ ] **Status** — success indicator (example: **200 OK**)
+
+### **Task 5: Read the response body**
+
+- [ ] With the same GET selected, open the **Response** tab.
+- [ ] Confirm the body is the **HTML** of the index page.
+- [ ] Remember: the response has a **header** (metadata) and a **body** (content).
+
+Successfully inspected a client GET and a server response in Firefox Developer Tools.
+
+</details>
+
+<details>
+  <summary>Terminal Commands</summary>
+
 ## Terminal Commands
 
 This room uses a browser lab and Firefox Developer Tools (Network tab). There are no primary CLI tools; inspection is done in the UI.
@@ -1395,6 +1718,11 @@ This room uses a browser lab and Firefox Developer Tools (Network tab). There ar
 # No primary terminal commands — inspect GET traffic via Firefox DevTools → Network on http://httpdemo.local:8080
 ```
 
+</details>
+
+<details>
+  <summary>Code</summary>
+
 ## Code
 
 No programming component. HTTP GET requests and HTML responses are inspected in the browser.
@@ -1402,6 +1730,11 @@ No programming component. HTTP GET requests and HTML responses are inspected in 
 ```py
 # No code snippets for the Client-Server Basics room.
 ```
+
+</details>
+
+<details>
+  <summary>Questions and Answers</summary>
 
 ## Questions and Answers
 
@@ -1596,6 +1929,8 @@ No programming component. HTTP GET requests and HTML responses are inspected in 
 
 </details>
 
+</details>
+
 ## Summary
 
 Client-Server Basics explains how networked machines offer and consume services: the client initiates requests, the server responds, protocols define the shared rules, ports identify services, and DNS maps names to IP addresses. A pizza analogy makes the model concrete; an HTTP GET lab in Firefox DevTools shows scheme, host, path, IP, status codes, and response headers/bodies. Room answers include Port, Internet Protocol address, host `www.iamlearning.thm`, and scheme `https`. Next up: virtualization.
@@ -1603,5 +1938,9 @@ Client-Server Basics explains how networked machines offer and consume services:
 ## References
 
 - [Client-Server Basics – TryHackMe](https://tryhackme.com/room/clientserverbasics)
+- [RFC 9110 — HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html)
+- [RFC 1034 — Domain Names (concepts and facilities)](https://www.rfc-editor.org/rfc/rfc1034.html)
+- [MDN — HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
+- [MDN — URL](https://developer.mozilla.org/en-US/docs/Web/API/URL)
 
 </details>
